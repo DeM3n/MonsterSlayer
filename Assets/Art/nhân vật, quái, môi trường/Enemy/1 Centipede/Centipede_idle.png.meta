@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 29a99fadaf6596a4986aa183664ea8a1
+guid: e1f71fb62cd69454ba1b4b6edb188e13
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -112,10 +112,10 @@ TextureImporter:
       name: Centipede_idle_0
       rect:
         serializedVersion: 2
-        x: 23
+        x: 119
         y: 0
-        width: 49
-        height: 36
+        width: 237
+        height: 176
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,10 +134,10 @@ TextureImporter:
       name: Centipede_idle_1
       rect:
         serializedVersion: 2
-        x: 95
+        x: 479
         y: 0
-        width: 50
-        height: 36
+        width: 242
+        height: 176
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,10 +156,10 @@ TextureImporter:
       name: Centipede_idle_2
       rect:
         serializedVersion: 2
-        x: 168
+        x: 844
         y: 0
-        width: 49
-        height: 36
+        width: 237
+        height: 176
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,10 +178,10 @@ TextureImporter:
       name: Centipede_idle_3
       rect:
         serializedVersion: 2
-        x: 241
+        x: 1209
         y: 0
-        width: 47
-        height: 36
+        width: 227
+        height: 176
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

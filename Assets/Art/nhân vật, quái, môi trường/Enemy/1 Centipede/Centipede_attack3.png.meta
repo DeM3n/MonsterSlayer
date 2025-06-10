@@ -1,25 +1,25 @@
 fileFormatVersion: 2
-guid: e50e1a051023a494eafbe80539fdd3c9
+guid: d37cd3dd8b0ff6d438adcf954da83fec
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3657157753095123412
-    second: Centipede_attack3_0
+      213: 3023880972665182235
+    second: Centipede_attack3_scaled_5x_pngcrushed_0
   - first:
-      213: 371041804031498727
-    second: Centipede_attack3_1
+      213: 4116571971223373048
+    second: Centipede_attack3_scaled_5x_pngcrushed_1
   - first:
-      213: -1202921312404904719
-    second: Centipede_attack3_2
+      213: -487920138206678446
+    second: Centipede_attack3_scaled_5x_pngcrushed_2
   - first:
-      213: -3954489870997234837
-    second: Centipede_attack3_3
+      213: -1035242308812286810
+    second: Centipede_attack3_scaled_5x_pngcrushed_3
   - first:
-      213: -984963307857025079
-    second: Centipede_attack3_4
+      213: -7182174010033927079
+    second: Centipede_attack3_scaled_5x_pngcrushed_4
   - first:
-      213: 1865303052587396893
-    second: Centipede_attack3_5
+      213: 878992136486926277
+    second: Centipede_attack3_scaled_5x_pngcrushed_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -115,13 +115,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Centipede_attack3_0
+      name: Centipede_attack3_scaled_5x_pngcrushed_0
       rect:
         serializedVersion: 2
-        x: 23
+        x: 119
         y: 0
-        width: 49
-        height: 36
+        width: 237
+        height: 176
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,20 +130,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4d1fcc89995d0c230800000000000000
-      internalID: 3657157753095123412
+      spriteID: b1855c239bbf6f920800000000000000
+      internalID: 3023880972665182235
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Centipede_attack3_1
+      name: Centipede_attack3_scaled_5x_pngcrushed_1
       rect:
         serializedVersion: 2
-        x: 97
+        x: 489
         y: 0
-        width: 48
-        height: 33
+        width: 232
+        height: 161
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7e91e1e0e84362500800000000000000
-      internalID: 371041804031498727
+      spriteID: 8f44915b560012930800000000000000
+      internalID: 4116571971223373048
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Centipede_attack3_2
+      name: Centipede_attack3_scaled_5x_pngcrushed_2
       rect:
         serializedVersion: 2
-        x: 170
+        x: 854
         y: 0
-        width: 47
-        height: 33
+        width: 227
+        height: 161
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,20 +174,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1f4eb51907d5e4fe0800000000000000
-      internalID: -1202921312404904719
+      spriteID: 2527e6b283f8a39f0800000000000000
+      internalID: -487920138206678446
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Centipede_attack3_3
+      name: Centipede_attack3_scaled_5x_pngcrushed_3
       rect:
         serializedVersion: 2
-        x: 218
+        x: 1094
         y: 0
-        width: 70
-        height: 27
+        width: 342
+        height: 131
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -196,20 +196,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b6b54530a64de19c0800000000000000
-      internalID: -3954489870997234837
+      spriteID: 6a4d9c6ea9412a1f0800000000000000
+      internalID: -1035242308812286810
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Centipede_attack3_4
+      name: Centipede_attack3_scaled_5x_pngcrushed_4
       rect:
         serializedVersion: 2
-        x: 288
+        x: 1444
         y: 0
-        width: 72
-        height: 27
+        width: 352
+        height: 131
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,20 +218,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9c7636e0715b452f0800000000000000
-      internalID: -984963307857025079
+      spriteID: 95c82e86acac35c90800000000000000
+      internalID: -7182174010033927079
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Centipede_attack3_5
+      name: Centipede_attack3_scaled_5x_pngcrushed_5
       rect:
         serializedVersion: 2
-        x: 373
+        x: 1869
         y: 0
-        width: 59
-        height: 32
+        width: 287
+        height: 156
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -240,8 +240,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d1f6ce75e33e2e910800000000000000
-      internalID: 1865303052587396893
+      spriteID: 5c73aa7e0bec23c00800000000000000
+      internalID: 878992136486926277
       vertices: []
       indices: 
       edges: []
@@ -259,7 +259,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Centipede_attack3_scaled_5x_pngcrushed_0: 3023880972665182235
+      Centipede_attack3_scaled_5x_pngcrushed_1: 4116571971223373048
+      Centipede_attack3_scaled_5x_pngcrushed_2: -487920138206678446
+      Centipede_attack3_scaled_5x_pngcrushed_3: -1035242308812286810
+      Centipede_attack3_scaled_5x_pngcrushed_4: -7182174010033927079
+      Centipede_attack3_scaled_5x_pngcrushed_5: 878992136486926277
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

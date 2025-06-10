@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e2c9f017c487a074cb0d96691af7ea7e
+guid: 076010e37ba66d94a8ac533abd882cbd
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -112,10 +112,10 @@ TextureImporter:
       name: Centipede_walk_0
       rect:
         serializedVersion: 2
-        x: 23
+        x: 119
         y: 0
-        width: 49
-        height: 36
+        width: 237
+        height: 176
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,10 +134,10 @@ TextureImporter:
       name: Centipede_walk_1
       rect:
         serializedVersion: 2
-        x: 96
+        x: 484
         y: 0
-        width: 48
-        height: 35
+        width: 232
+        height: 171
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,10 +156,10 @@ TextureImporter:
       name: Centipede_walk_2
       rect:
         serializedVersion: 2
-        x: 167
+        x: 839
         y: 0
-        width: 49
-        height: 36
+        width: 237
+        height: 176
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,10 +178,10 @@ TextureImporter:
       name: Centipede_walk_3
       rect:
         serializedVersion: 2
-        x: 238
+        x: 1194
         y: 0
-        width: 50
-        height: 37
+        width: 242
+        height: 181
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a34d4e8385d46354fb988e3242bfd75c
+guid: 4a9ea67b4ca682748a2421361662729d
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -112,10 +112,10 @@ TextureImporter:
       name: Centipede_attack4_0
       rect:
         serializedVersion: 2
-        x: 8
+        x: 44
         y: 0
-        width: 64
-        height: 27
+        width: 312
+        height: 131
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,10 +134,10 @@ TextureImporter:
       name: Centipede_attack4_1
       rect:
         serializedVersion: 2
-        x: 80
+        x: 404
         y: 0
-        width: 64
-        height: 26
+        width: 312
+        height: 126
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,10 +156,10 @@ TextureImporter:
       name: Centipede_attack4_2
       rect:
         serializedVersion: 2
-        x: 152
+        x: 764
         y: 0
-        width: 64
-        height: 26
+        width: 312
+        height: 126
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,10 +178,10 @@ TextureImporter:
       name: Centipede_attack4_3
       rect:
         serializedVersion: 2
-        x: 224
+        x: 1124
         y: 0
-        width: 64
-        height: 28
+        width: 312
+        height: 136
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

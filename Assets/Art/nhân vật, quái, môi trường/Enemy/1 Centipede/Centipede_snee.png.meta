@@ -1,25 +1,25 @@
 fileFormatVersion: 2
-guid: d337dd931c91ae24c84502eb59847005
+guid: 514adc1a52ff57d41b2b304931ee0893
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4379976746642982691
-    second: Centipede_sneer_0
+      213: -6612606320045621349
+    second: Centipede_snee_0
   - first:
-      213: 2295520258630748026
-    second: Centipede_sneer_1
+      213: 2739649233290836768
+    second: Centipede_snee_1
   - first:
-      213: -2011246247676180582
-    second: Centipede_sneer_2
+      213: -5882130431585029851
+    second: Centipede_snee_2
   - first:
-      213: -313375642910794991
-    second: Centipede_sneer_3
+      213: 3758121456548919365
+    second: Centipede_snee_3
   - first:
-      213: 6413676382623360730
-    second: Centipede_sneer_4
+      213: 5996184815935037388
+    second: Centipede_snee_4
   - first:
-      213: 3479829199572755613
-    second: Centipede_sneer_5
+      213: 5512637074310657859
+    second: Centipede_snee_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -115,13 +115,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Centipede_sneer_0
+      name: Centipede_snee_0
       rect:
         serializedVersion: 2
-        x: 23
+        x: 119
         y: 0
-        width: 49
-        height: 36
+        width: 237
+        height: 176
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,20 +130,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 327402c15adc8cc30800000000000000
-      internalID: 4379976746642982691
+      spriteID: b9f7d26469d4b34a0800000000000000
+      internalID: -6612606320045621349
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Centipede_sneer_1
+      name: Centipede_snee_1
       rect:
         serializedVersion: 2
-        x: 98
+        x: 494
         y: 0
-        width: 47
-        height: 38
+        width: 227
+        height: 186
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a77066653835bdf10800000000000000
-      internalID: 2295520258630748026
+      spriteID: 02bb87f5670350620800000000000000
+      internalID: 2739649233290836768
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Centipede_sneer_2
+      name: Centipede_snee_2
       rect:
         serializedVersion: 2
-        x: 173
+        x: 869
         y: 0
-        width: 44
-        height: 40
+        width: 212
+        height: 196
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,20 +174,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a978c6b913e9614e0800000000000000
-      internalID: -2011246247676180582
+      spriteID: 521fbde89897e5ea0800000000000000
+      internalID: -5882130431585029851
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Centipede_sneer_3
+      name: Centipede_snee_3
       rect:
         serializedVersion: 2
-        x: 245
+        x: 1229
         y: 0
-        width: 44
-        height: 41
+        width: 212
+        height: 201
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -196,20 +196,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 11bda0b538aa6abf0800000000000000
-      internalID: -313375642910794991
+      spriteID: 5483f58ad87872430800000000000000
+      internalID: 3758121456548919365
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Centipede_sneer_4
+      name: Centipede_snee_4
       rect:
         serializedVersion: 2
-        x: 317
+        x: 1589
         y: 0
-        width: 44
-        height: 40
+        width: 212
+        height: 196
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,20 +218,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ad6e39a50b4f10950800000000000000
-      internalID: 6413676382623360730
+      spriteID: ccf1669225ab63350800000000000000
+      internalID: 5996184815935037388
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Centipede_sneer_5
+      name: Centipede_snee_5
       rect:
         serializedVersion: 2
-        x: 386
+        x: 1934
         y: 0
-        width: 46
-        height: 38
+        width: 226
+        height: 186
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -240,8 +240,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d94e0975836da4030800000000000000
-      internalID: 3479829199572755613
+      spriteID: 3477fed3632d08c40800000000000000
+      internalID: 5512637074310657859
       vertices: []
       indices: 
       edges: []

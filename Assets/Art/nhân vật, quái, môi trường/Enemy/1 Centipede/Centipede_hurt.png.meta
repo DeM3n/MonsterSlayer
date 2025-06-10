@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6fbf65d5e2ab78a48afc2f96950f141a
+guid: e784a43885fbf6646acca2fe0ca00ae4
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -106,10 +106,10 @@ TextureImporter:
       name: Centipede_hurt_0
       rect:
         serializedVersion: 2
-        x: 25
+        x: 129
         y: 0
-        width: 48
-        height: 36
+        width: 232
+        height: 176
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,10 +128,10 @@ TextureImporter:
       name: Centipede_hurt_1
       rect:
         serializedVersion: 2
-        x: 97
+        x: 489
         y: 0
-        width: 47
-        height: 36
+        width: 227
+        height: 176
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
