@@ -118,10 +118,10 @@ TextureImporter:
       name: PullUp_0
       rect:
         serializedVersion: 2
-        x: 30
-        y: 28
-        width: 68
-        height: 122
+        x: 39
+        y: 39
+        width: 92
+        height: 162
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,10 +140,10 @@ TextureImporter:
       name: PullUp_1
       rect:
         serializedVersion: 2
-        x: 222
-        y: 32
-        width: 64
-        height: 118
+        x: 294
+        y: 39
+        width: 87
+        height: 162
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -162,10 +162,10 @@ TextureImporter:
       name: PullUp_2
       rect:
         serializedVersion: 2
-        x: 402
-        y: 33
-        width: 88
-        height: 109
+        x: 529
+        y: 39
+        width: 122
+        height: 152
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,10 +184,10 @@ TextureImporter:
       name: PullUp_3
       rect:
         serializedVersion: 2
-        x: 580
-        y: 32
-        width: 94
-        height: 118
+        x: 764
+        y: 39
+        width: 127
+        height: 157
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -206,10 +206,10 @@ TextureImporter:
       name: PullUp_4
       rect:
         serializedVersion: 2
-        x: 779
-        y: 32
-        width: 80
-        height: 118
+        x: 1029
+        y: 39
+        width: 107
+        height: 162
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -228,10 +228,10 @@ TextureImporter:
       name: PullUp_5
       rect:
         serializedVersion: 2
-        x: 967
-        y: 32
-        width: 87
-        height: 103
+        x: 1274
+        y: 39
+        width: 117
+        height: 137
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
