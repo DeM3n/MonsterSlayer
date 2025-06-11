@@ -1,25 +1,25 @@
 fileFormatVersion: 2
-guid: 2256c34054f03f64f85562ea43ebfcd9
+guid: 1dc21b0dc29d51e499bafea080d7bcae
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1541513601985774774
-    second: Roll_0
+      213: -3236675104909177313
+    second: Attack3_0
   - first:
-      213: -7983745396288232634
-    second: Roll_1
+      213: -6048392498854522608
+    second: Attack3_1
   - first:
-      213: -7351514667388473569
-    second: Roll_2
+      213: 4769638531270534136
+    second: Attack3_2
   - first:
-      213: 5034399978413682347
-    second: Roll_3
+      213: -4825729793490337222
+    second: Attack3_3
   - first:
-      213: 4811183109302650746
-    second: Roll_4
+      213: 710405504474814621
+    second: Attack3_4
   - first:
-      213: -6445079334599217287
-    second: Roll_5
+      213: -1658806294426973400
+    second: Attack3_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -115,13 +115,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Roll_0
+      name: Attack3_0
       rect:
         serializedVersion: 2
-        x: 104
-        y: 39
-        width: 137
-        height: 167
+        x: 34
+        y: 0
+        width: 92
+        height: 176
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,20 +130,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a4b7439db817b9ae0800000000000000
-      internalID: -1541513601985774774
+      spriteID: f1ec98604250513d0800000000000000
+      internalID: -3236675104909177313
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Roll_1
+      name: Attack3_1
       rect:
         serializedVersion: 2
-        x: 364
-        y: 34
-        width: 147
-        height: 127
+        x: 259
+        y: 0
+        width: 112
+        height: 166
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 643641d9cd9043190800000000000000
-      internalID: -7983745396288232634
+      spriteID: 01193ab611bcf0ca0800000000000000
+      internalID: -6048392498854522608
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Roll_2
+      name: Attack3_2
       rect:
         serializedVersion: 2
-        x: 624
-        y: 34
-        width: 132
-        height: 112
+        x: 484
+        y: 0
+        width: 127
+        height: 171
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,20 +174,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f1f6c392c5c2af990800000000000000
-      internalID: -7351514667388473569
+      spriteID: 8f3656b39f8213240800000000000000
+      internalID: 4769638531270534136
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Roll_3
+      name: Attack3_3
       rect:
         serializedVersion: 2
-        x: 894
-        y: 34
-        width: 97
-        height: 127
+        x: 764
+        y: 0
+        width: 117
+        height: 171
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -196,20 +196,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: baee4926b18cdd540800000000000000
-      internalID: 5034399978413682347
+      spriteID: a324df41250970db0800000000000000
+      internalID: -4825729793490337222
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Roll_4
+      name: Attack3_4
       rect:
         serializedVersion: 2
-        x: 1134
-        y: 34
-        width: 137
-        height: 107
+        x: 1004
+        y: 0
+        width: 142
+        height: 166
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,20 +218,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a7708531c81c4c240800000000000000
-      internalID: 4811183109302650746
+      spriteID: d9814bcda0edbd900800000000000000
+      internalID: 710405504474814621
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Roll_5
+      name: Attack3_5
       rect:
         serializedVersion: 2
-        x: 1394
-        y: 34
-        width: 102
-        height: 132
+        x: 1249
+        y: 0
+        width: 107
+        height: 171
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -240,8 +240,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 97fa0002e7a7e86a0800000000000000
-      internalID: -6445079334599217287
+      spriteID: 82b8f75c67cbaf8e0800000000000000
+      internalID: -1658806294426973400
       vertices: []
       indices: 
       edges: []

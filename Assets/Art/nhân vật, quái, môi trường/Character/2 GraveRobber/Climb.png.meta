@@ -1,25 +1,25 @@
 fileFormatVersion: 2
-guid: b13d452da57aa2a4399de7deb74d2f80
+guid: 6caa742a8b064874d83c86dfcea3773a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1933053002013764384
-    second: GraveRobber_attack2_0
+      213: 7534934852089752246
+    second: Climb_0
   - first:
-      213: -8456615587874987067
-    second: GraveRobber_attack2_1
+      213: 6714499952825786704
+    second: Climb_1
   - first:
-      213: 3457709426613196927
-    second: GraveRobber_attack2_2
+      213: 712421738393795653
+    second: Climb_2
   - first:
-      213: 7378740919148128849
-    second: GraveRobber_attack2_3
+      213: -479793576682234975
+    second: Climb_3
   - first:
-      213: 5329782705119768231
-    second: GraveRobber_attack2_4
+      213: 3328522658917692499
+    second: Climb_4
   - first:
-      213: 6868817760952682807
-    second: GraveRobber_attack2_5
+      213: 4263537830231215821
+    second: Climb_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -115,13 +115,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: GraveRobber_attack2_0
+      name: Climb_0
       rect:
         serializedVersion: 2
-        x: 5
+        x: 34
         y: 0
-        width: 21
-        height: 34
+        width: 92
+        height: 166
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,20 +130,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 02b680da67593da10800000000000000
-      internalID: 1933053002013764384
+      spriteID: 6ba25808357719860800000000000000
+      internalID: 7534934852089752246
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GraveRobber_attack2_1
+      name: Climb_1
       rect:
         serializedVersion: 2
-        x: 50
-        y: 0
-        width: 24
-        height: 35
+        x: 274
+        y: 4
+        width: 97
+        height: 162
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5c32eaa8de014aa80800000000000000
-      internalID: -8456615587874987067
+      spriteID: 051ee84d122be2d50800000000000000
+      internalID: 6714499952825786704
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GraveRobber_attack2_2
+      name: Climb_2
       rect:
         serializedVersion: 2
-        x: 95
-        y: 0
-        width: 27
-        height: 35
+        x: 504
+        y: 4
+        width: 97
+        height: 162
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,20 +174,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f789ccd57604cff20800000000000000
-      internalID: 3457709426613196927
+      spriteID: 54c7a37ebc703e900800000000000000
+      internalID: 712421738393795653
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GraveRobber_attack2_3
+      name: Climb_3
       rect:
         serializedVersion: 2
-        x: 151
+        x: 749
         y: 0
-        width: 25
-        height: 32
+        width: 92
+        height: 166
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -196,20 +196,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 15aa67f85cd866660800000000000000
-      internalID: 7378740919148128849
+      spriteID: 1ab5758b84e6759f0800000000000000
+      internalID: -479793576682234975
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GraveRobber_attack2_4
+      name: Climb_4
       rect:
         serializedVersion: 2
-        x: 200
-        y: 0
-        width: 33
-        height: 31
+        x: 984
+        y: 4
+        width: 97
+        height: 162
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,20 +218,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7ae2fa4c12137f940800000000000000
-      internalID: 5329782705119768231
+      spriteID: 354b0a719b9413e20800000000000000
+      internalID: 3328522658917692499
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GraveRobber_attack2_5
+      name: Climb_5
       rect:
         serializedVersion: 2
-        x: 248
-        y: 0
-        width: 24
-        height: 32
+        x: 1234
+        y: 4
+        width: 97
+        height: 162
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -240,8 +240,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7398a7c6c51f25f50800000000000000
-      internalID: 6868817760952682807
+      spriteID: dce0f5141112b2b30800000000000000
+      internalID: 4263537830231215821
       vertices: []
       indices: 
       edges: []

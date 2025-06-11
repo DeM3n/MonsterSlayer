@@ -1,25 +1,25 @@
 fileFormatVersion: 2
-guid: 9a49cac1d8e29fb4d9edadd913695bf1
+guid: 08ac621996c6e4443a7450070a07ea68
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4835990371571868747
-    second: GraveRobber_jump_0
+      213: -7279525710136958521
+    second: Push_0
   - first:
-      213: 8000754575573732751
-    second: GraveRobber_jump_1
+      213: 8092220566306130611
+    second: Push_1
   - first:
-      213: 7792217035677885417
-    second: GraveRobber_jump_2
+      213: -4865412993223310051
+    second: Push_2
   - first:
-      213: -6368453870203211403
-    second: GraveRobber_jump_3
+      213: -1889459256473174198
+    second: Push_3
   - first:
-      213: -4897716031281083605
-    second: GraveRobber_jump_4
+      213: -3389288309551913449
+    second: Push_4
   - first:
-      213: 1420186416009120575
-    second: GraveRobber_jump_5
+      213: -2444409116357537768
+    second: Push_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -115,13 +115,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: GraveRobber_jump_0
+      name: Push_0
       rect:
         serializedVersion: 2
-        x: 8
+        x: 39
         y: 0
-        width: 18
-        height: 32
+        width: 107
+        height: 166
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,20 +130,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b4420caee93ec1340800000000000000
-      internalID: 4835990371571868747
+      spriteID: 7c1a6f96fede9fa90800000000000000
+      internalID: -7279525710136958521
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GraveRobber_jump_1
+      name: Push_1
       rect:
         serializedVersion: 2
-        x: 53
+        x: 289
         y: 0
-        width: 20
-        height: 33
+        width: 97
+        height: 171
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f8d472c85e3680f60800000000000000
-      internalID: 8000754575573732751
+      spriteID: 3ba89ca0bb75d4070800000000000000
+      internalID: 8092220566306130611
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GraveRobber_jump_2
+      name: Push_2
       rect:
         serializedVersion: 2
-        x: 99
+        x: 539
         y: 0
-        width: 22
-        height: 35
+        width: 87
+        height: 176
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,64 +174,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9e3e358eb14832c60800000000000000
-      internalID: 7792217035677885417
+      spriteID: d15ca5529a49a7cb0800000000000000
+      internalID: -4865412993223310051
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GraveRobber_jump_3
+      name: Push_3
       rect:
         serializedVersion: 2
-        x: 147
-        y: 4
-        width: 21
-        height: 36
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 571731252f4be97a0800000000000000
-      internalID: -6368453870203211403
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GraveRobber_jump_4
-      rect:
-        serializedVersion: 2
-        x: 194
-        y: 2
-        width: 21
-        height: 41
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b2b41c00831d70cb0800000000000000
-      internalID: -4897716031281083605
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GraveRobber_jump_5
-      rect:
-        serializedVersion: 2
-        x: 242
+        x: 759
         y: 0
-        width: 22
-        height: 35
+        width: 107
+        height: 166
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -240,8 +196,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f3b0f09550485b310800000000000000
-      internalID: 1420186416009120575
+      spriteID: a4fb75821da47c5e0800000000000000
+      internalID: -1889459256473174198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Push_4
+      rect:
+        serializedVersion: 2
+        x: 1009
+        y: 0
+        width: 97
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71626cb5d34d6f0d0800000000000000
+      internalID: -3389288309551913449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Push_5
+      rect:
+        serializedVersion: 2
+        x: 1259
+        y: 0
+        width: 87
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81058c51cd6b31ed0800000000000000
+      internalID: -2444409116357537768
       vertices: []
       indices: 
       edges: []

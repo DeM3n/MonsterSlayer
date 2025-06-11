@@ -1,16 +1,46 @@
 fileFormatVersion: 2
-guid: 1a9fc7e1f4dfcf945a388704daffd3f5
+guid: bf7c3b799742d1b4fbede060220ba1ff
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7588353388349702493
-    second: GraveRobber_hurt_0
+      213: -6248516419397687780
+    second: Run_dust_0
   - first:
-      213: 6374375613726006911
-    second: GraveRobber_hurt_1
+      213: 8910941187334469353
+    second: Run_dust_1
   - first:
-      213: 7496859555948530725
-    second: GraveRobber_hurt_2
+      213: -7175546409251255889
+    second: Run_dust_2
+  - first:
+      213: -6597993533049800715
+    second: Run_dust_3
+  - first:
+      213: -3468137459213557755
+    second: Run_dust_4
+  - first:
+      213: -8238062486851310990
+    second: Run_dust_5
+  - first:
+      213: -5554607479898012703
+    second: Run_dust_6
+  - first:
+      213: 7941720349628601609
+    second: Run_dust_7
+  - first:
+      213: 158163182363695668
+    second: Run_dust_8
+  - first:
+      213: 8467080119133169449
+    second: Run_dust_9
+  - first:
+      213: -7603733794787978380
+    second: Run_dust_10
+  - first:
+      213: -7908781199303617742
+    second: Run_dust_11
+  - first:
+      213: 1326500353368377413
+    second: Run_dust_12
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -106,67 +136,111 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: GraveRobber_hurt_0
+      name: Run_dust_0
       rect:
         serializedVersion: 2
-        x: 5
+        x: 0
         y: 0
-        width: 21
-        height: 34
+        width: 173
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d5147bea33f3f4960800000000000000
-      internalID: 7588353388349702493
+      spriteID: 02c17222e8f28ba4a9c5087e48b5134c
+      internalID: 274087640
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GraveRobber_hurt_1
+      name: Run_dust_2
       rect:
         serializedVersion: 2
-        x: 54
+        x: 239
         y: 0
-        width: 21
-        height: 34
+        width: 132
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f7e1d0909d4567850800000000000000
-      internalID: 6374375613726006911
+      spriteID: 3025444e74ce1954f97fed168e51013c
+      internalID: 230453403
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GraveRobber_hurt_2
+      name: Run_dust_5
       rect:
         serializedVersion: 2
-        x: 102
+        x: 374
         y: 0
-        width: 20
-        height: 34
+        width: 132
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 52c0e4bcb023a0860800000000000000
-      internalID: 7496859555948530725
+      spriteID: 0648507ed6c40ed43a15ff4962a47c11
+      internalID: -313907036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Run_dust_7
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 0
+        width: 147
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f01ed6e357f1a1499ebb11ff804f5a6
+      internalID: -1446939596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Run_dust_9
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 0
+        width: 85
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c47f7fb3bf1c31c4d8aee140102cf7a0
+      internalID: -1829091713
       vertices: []
       indices: 
       edges: []
@@ -175,7 +249,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -184,7 +258,18 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Run_dust_0: 274087640
+      Run_dust_1: -1261923407
+      Run_dust_10: 1431654393
+      Run_dust_2: 230453403
+      Run_dust_3: -1439370363
+      Run_dust_4: 628130169
+      Run_dust_5: -313907036
+      Run_dust_6: -190805092
+      Run_dust_7: -1446939596
+      Run_dust_8: 1877397272
+      Run_dust_9: -1829091713
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

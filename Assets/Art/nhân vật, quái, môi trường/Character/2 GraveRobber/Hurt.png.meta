@@ -1,25 +1,16 @@
 fileFormatVersion: 2
-guid: 12ab3d1bbb42f354cbdeab3ad2140349
+guid: 2289f8549b8ece4459bc6be3acf6113c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7315072731564485286
-    second: GraveRobber_death_0
+      213: -2048800907179887802
+    second: Hurt_0
   - first:
-      213: -4426376638548535748
-    second: GraveRobber_death_1
+      213: 490842205202310979
+    second: Hurt_1
   - first:
-      213: 9063657821993755969
-    second: GraveRobber_death_2
-  - first:
-      213: -6430472471030257866
-    second: GraveRobber_death_3
-  - first:
-      213: -6318254588043560186
-    second: GraveRobber_death_4
-  - first:
-      213: 6377248365192135330
-    second: GraveRobber_death_5
+      213: -3720053754089064719
+    second: Hurt_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -115,13 +106,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: GraveRobber_death_0
+      name: Hurt_0
       rect:
         serializedVersion: 2
-        x: 5
+        x: 29
         y: 0
-        width: 21
-        height: 34
+        width: 97
+        height: 166
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,20 +121,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6aa2c0774eb548560800000000000000
-      internalID: 7315072731564485286
+      spriteID: 6437b001e623193e0800000000000000
+      internalID: -2048800907179887802
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GraveRobber_death_1
+      name: Hurt_1
       rect:
         serializedVersion: 2
-        x: 51
+        x: 274
         y: 0
-        width: 25
-        height: 29
+        width: 97
+        height: 166
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +143,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c361a3136e95292c0800000000000000
-      internalID: -4426376638548535748
+      spriteID: 3476ad19262dfc600800000000000000
+      internalID: 490842205202310979
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GraveRobber_death_2
+      name: Hurt_2
       rect:
         serializedVersion: 2
-        x: 98
+        x: 514
         y: 0
-        width: 34
-        height: 25
+        width: 92
+        height: 166
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,74 +165,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 145e0ad84c498cd70800000000000000
-      internalID: 9063657821993755969
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GraveRobber_death_3
-      rect:
-        serializedVersion: 2
-        x: 146
-        y: 0
-        width: 37
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 63720529b5f52c6a0800000000000000
-      internalID: -6430472471030257866
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GraveRobber_death_4
-      rect:
-        serializedVersion: 2
-        x: 194
-        y: 0
-        width: 36
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 60b7e2f7dec0158a0800000000000000
-      internalID: -6318254588043560186
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GraveRobber_death_5
-      rect:
-        serializedVersion: 2
-        x: 242
-        y: 0
-        width: 37
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2a2c7bb9999808850800000000000000
-      internalID: 6377248365192135330
+      spriteID: 1f6b92202d6bf5cc0800000000000000
+      internalID: -3720053754089064719
       vertices: []
       indices: 
       edges: []
