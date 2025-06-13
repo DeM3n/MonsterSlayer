@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b1fa4dfa7c6c97b4089a36c211d4df5e
+guid: 9b2805f283deadf4dbdf72b712a70f21
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Battle_turtle_0: -8886589386760399643
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

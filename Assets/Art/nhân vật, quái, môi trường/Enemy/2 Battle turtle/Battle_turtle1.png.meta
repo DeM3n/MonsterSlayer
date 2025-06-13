@@ -1,19 +1,10 @@
 fileFormatVersion: 2
-guid: e1f71fb62cd69454ba1b4b6edb188e13
+guid: b1fa4dfa7c6c97b4089a36c211d4df5e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6510057486765227906
-    second: Centipede_idle_0
-  - first:
-      213: 7000556302356971276
-    second: Centipede_idle_1
-  - first:
-      213: 5204389392116608658
-    second: Centipede_idle_2
-  - first:
-      213: 8304863140311508398
-    second: Centipede_idle_3
+      213: -8886589386760399643
+    second: Battle_turtle_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -109,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Centipede_idle_0
+      name: Battle_turtle_0
       rect:
         serializedVersion: 2
-        x: 119
+        x: 12
         y: 0
-        width: 237
-        height: 176
+        width: 60
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,74 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 28f730edace585a50800000000000000
-      internalID: 6510057486765227906
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Centipede_idle_1
-      rect:
-        serializedVersion: 2
-        x: 479
-        y: 0
-        width: 242
-        height: 176
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c0ffb10ddd8f62160800000000000000
-      internalID: 7000556302356971276
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Centipede_idle_2
-      rect:
-        serializedVersion: 2
-        x: 844
-        y: 0
-        width: 237
-        height: 176
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 29eebedf394b93840800000000000000
-      internalID: 5204389392116608658
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Centipede_idle_3
-      rect:
-        serializedVersion: 2
-        x: 1209
-        y: 0
-        width: 227
-        height: 176
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ea5a08a660dc04370800000000000000
-      internalID: 8304863140311508398
+      spriteID: 5e4d361390e7ca480800000000000000
+      internalID: -8886589386760399643
       vertices: []
       indices: 
       edges: []
@@ -210,10 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Centipede_idle_0: 6510057486765227906
-      Centipede_idle_1: 7000556302356971276
-      Centipede_idle_2: 5204389392116608658
-      Centipede_idle_3: 8304863140311508398
+      Battle_turtle_0: -8886589386760399643
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
