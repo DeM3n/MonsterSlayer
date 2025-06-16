@@ -5,7 +5,7 @@ public class PlayerMovement : MonoBehaviour
     public float moveSpeed = 5f;
    
     private float moveInput;
-
+    public bool canMove = false;
     void Start()
     {
       
@@ -13,7 +13,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-       
+        if (!canMove) return;
         moveInput = Input.GetAxisRaw("Horizontal");
         transform.Translate(Vector2.right * moveInput * moveSpeed * Time.deltaTime);
 
