@@ -7,10 +7,15 @@ public class CameraAutoMove : MonoBehaviour
     public float rightBound = 10f;            // vị trí cuối map (biên phải)
 
     private bool isMoving = true;
-
+    private PlayerMovement player;
     void Start()
     {
-        // Đặt camera ở vị trí cuối map (rightBound) khi bắt đầu
+         player = Object.FindFirstObjectByType<PlayerMovement>();
+        if (player != null)
+        {
+            player.canMove = false; // Khóa di chuyển ban đầu
+        }
+        
         Vector3 startPos = transform.position;
         startPos.x = rightBound;
         transform.position = startPos;
@@ -30,6 +35,10 @@ public class CameraAutoMove : MonoBehaviour
                 pos.x = leftBound;
                 transform.position = pos;
                 isMoving = false; // Dừng di chuyển khi tới đầu map
+                if (player != null)
+                {
+                    player.canMove = true;
+                }
             }
         }
     }
