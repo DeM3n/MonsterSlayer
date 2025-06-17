@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: d610cfa129b924c4493c0ab31c46f1d2
+guid: 2df223e51ed51ab439c9dd4fe0a38af7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -368829348882100361
-    second: Big_bloated_0
+      213: -985252263995961722
+    second: QuitButton_scaled_3x_pngcrushed_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -178,13 +178,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Big_bloated_0
+      name: QuitButton_scaled_3x_pngcrushed_0
       rect:
         serializedVersion: 2
-        x: 25
-        y: 0
-        width: 47
-        height: 49
+        x: 14
+        y: 32
+        width: 260
+        height: 107
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -193,8 +193,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 77fc42d49a7a1eaf0800000000000000
-      internalID: -368829348882100361
+      spriteID: 68e0f56394ea352f0800000000000000
+      internalID: -985252263995961722
       vertices: []
       indices: 
       edges: []
@@ -213,7 +213,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Big_bloated_0: -368829348882100361
+      QuitButton_scaled_3x_pngcrushed_0: -985252263995961722
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
