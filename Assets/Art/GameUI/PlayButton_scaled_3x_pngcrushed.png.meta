@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: a83dace7e2254964983bf1128f13aad7
+guid: d91ee4a175663d947ba41fbcc43e7f02
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6996691837910254344
-    second: GameMenu_scaled_4x_pngcrushed_0
+      213: 5811451868180352404
+    second: PlayButton_scaled_3x_pngcrushed_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: GameMenu_scaled_4x_pngcrushed_0
+      name: PlayButton_scaled_3x_pngcrushed_0
       rect:
         serializedVersion: 2
-        x: 91
-        y: 11
-        width: 686
-        height: 618
+        x: 35
+        y: 17
+        width: 266
+        height: 113
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8030481182e391160800000000000000
-      internalID: 6996691837910254344
+      spriteID: 49d8b280fac66a050800000000000000
+      internalID: 5811451868180352404
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      GameMenu_scaled_4x_pngcrushed_0: 6996691837910254344
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
