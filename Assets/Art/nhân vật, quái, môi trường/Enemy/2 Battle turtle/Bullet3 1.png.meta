@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: b1fa4dfa7c6c97b4089a36c211d4df5e
+guid: ae4c5346a157de9478a3d38dc4974a59
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8886589386760399643
-    second: Battle_turtle_0
+      213: -5490351300437617222
+    second: Bullet3 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Battle_turtle_0
+      name: Bullet3 1_0
       rect:
         serializedVersion: 2
-        x: 12
+        x: 0
         y: 0
-        width: 60
-        height: 40
+        width: 50
+        height: 75
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5e4d361390e7ca480800000000000000
-      internalID: -8886589386760399643
+      spriteID: ab5df45d49a5ec3b0800000000000000
+      internalID: -5490351300437617222
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Battle_turtle_0: -8886589386760399643
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

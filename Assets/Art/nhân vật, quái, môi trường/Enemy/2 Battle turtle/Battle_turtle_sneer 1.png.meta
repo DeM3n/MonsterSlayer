@@ -1,13 +1,25 @@
 fileFormatVersion: 2
-guid: bd05c98314368aa41875552f45d90181
+guid: 288244ad5b33c5848bb376a3f3bedfb1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7827860546957170348
-    second: Battle_turtle_hurt 1_0
+      213: -4086353201730252200
+    second: Battle_turtle_sneer 1_0
   - first:
-      213: 2503070180292995312
-    second: Battle_turtle_hurt 1_1
+      213: 1913478932760439054
+    second: Battle_turtle_sneer 1_1
+  - first:
+      213: 8496747466286443460
+    second: Battle_turtle_sneer 1_2
+  - first:
+      213: 4033510038372014885
+    second: Battle_turtle_sneer 1_3
+  - first:
+      213: 8779865349051056081
+    second: Battle_turtle_sneer 1_4
+  - first:
+      213: 1557884341626753273
+    second: Battle_turtle_sneer 1_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -103,12 +115,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Battle_turtle_hurt 1_0
+      name: Battle_turtle_sneer 1_0
       rect:
         serializedVersion: 2
-        x: 74
+        x: 64
         y: 0
-        width: 287
+        width: 292
         height: 196
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -118,19 +130,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 459a25b6e4add5390800000000000000
-      internalID: -7827860546957170348
+      spriteID: 8529618d96b5a47c0800000000000000
+      internalID: -4086353201730252200
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Battle_turtle_hurt 1_1
+      name: Battle_turtle_sneer 1_1
       rect:
         serializedVersion: 2
-        x: 429
+        x: 424
         y: 0
-        width: 291
+        width: 297
         height: 196
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -140,8 +152,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0f8ac303111bcb220800000000000000
-      internalID: 2503070180292995312
+      spriteID: e09216883fa0e8a10800000000000000
+      internalID: 1913478932760439054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Battle_turtle_sneer 1_2
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 0
+        width: 287
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cb243a8dc28ae570800000000000000
+      internalID: 8496747466286443460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Battle_turtle_sneer 1_3
+      rect:
+        serializedVersion: 2
+        x: 1159
+        y: 0
+        width: 282
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52bd22b6208e9f730800000000000000
+      internalID: 4033510038372014885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Battle_turtle_sneer 1_4
+      rect:
+        serializedVersion: 2
+        x: 1479
+        y: 0
+        width: 312
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dff2f9640958d970800000000000000
+      internalID: 8779865349051056081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Battle_turtle_sneer 1_5
+      rect:
+        serializedVersion: 2
+        x: 1834
+        y: 0
+        width: 307
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f05ecffd87be9510800000000000000
+      internalID: 1557884341626753273
       vertices: []
       indices: 
       edges: []
@@ -159,9 +259,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Battle_turtle_hurt 1_0: -7827860546957170348
-      Battle_turtle_hurt 1_1: 2503070180292995312
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d610cfa129b924c4493c0ab31c46f1d2
+guid: fb4e132c430f44a49bbd21946f5be7ea
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -103,10 +103,10 @@ TextureImporter:
       name: Big_bloated_0
       rect:
         serializedVersion: 2
-        x: 25
+        x: 129
         y: 0
-        width: 47
-        height: 49
+        width: 231
+        height: 241
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Big_bloated_0: -368829348882100361
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

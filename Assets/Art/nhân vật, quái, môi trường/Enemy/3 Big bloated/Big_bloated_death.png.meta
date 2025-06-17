@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 18f10532cfd61104d8230e7dc08ee9d6
+guid: 4b5cc0b753160444a9cd504aaded91d5
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -112,10 +112,10 @@ TextureImporter:
       name: Big_bloated_death_0
       rect:
         serializedVersion: 2
-        x: 25
+        x: 129
         y: 0
-        width: 48
-        height: 49
+        width: 232
+        height: 241
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,10 +134,10 @@ TextureImporter:
       name: Big_bloated_death_1
       rect:
         serializedVersion: 2
-        x: 97
+        x: 489
         y: 0
-        width: 48
-        height: 41
+        width: 232
+        height: 201
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,10 +156,10 @@ TextureImporter:
       name: Big_bloated_death_2
       rect:
         serializedVersion: 2
-        x: 169
+        x: 849
         y: 0
-        width: 47
-        height: 27
+        width: 227
+        height: 131
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,10 +178,10 @@ TextureImporter:
       name: Big_bloated_death_3
       rect:
         serializedVersion: 2
-        x: 240
+        x: 1204
         y: 0
-        width: 47
-        height: 23
+        width: 227
+        height: 111
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -209,11 +209,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Big_bloated_death_0: 3257437365176999828
-      Big_bloated_death_1: 5960078776860791587
-      Big_bloated_death_2: 3943061801776786211
-      Big_bloated_death_3: -1627690868328340577
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

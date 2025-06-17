@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 13c7481a185a1074ab4c4a3de02ea894
+guid: a918411cc3a96ba41b535b0375e2c841
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -118,10 +118,10 @@ TextureImporter:
       name: Big_bloated_walk_0
       rect:
         serializedVersion: 2
-        x: 25
+        x: 129
         y: 0
-        width: 48
-        height: 49
+        width: 232
+        height: 241
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,10 +140,10 @@ TextureImporter:
       name: Big_bloated_walk_1
       rect:
         serializedVersion: 2
-        x: 97
+        x: 489
         y: 0
-        width: 48
-        height: 50
+        width: 232
+        height: 246
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -162,10 +162,10 @@ TextureImporter:
       name: Big_bloated_walk_2
       rect:
         serializedVersion: 2
-        x: 169
+        x: 849
         y: 0
-        width: 47
-        height: 51
+        width: 227
+        height: 251
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,10 +184,10 @@ TextureImporter:
       name: Big_bloated_walk_3
       rect:
         serializedVersion: 2
-        x: 241
+        x: 1209
         y: 0
-        width: 46
-        height: 49
+        width: 222
+        height: 241
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -206,10 +206,10 @@ TextureImporter:
       name: Big_bloated_walk_4
       rect:
         serializedVersion: 2
-        x: 313
+        x: 1569
         y: 0
-        width: 46
-        height: 50
+        width: 222
+        height: 246
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -228,10 +228,10 @@ TextureImporter:
       name: Big_bloated_walk_5
       rect:
         serializedVersion: 2
-        x: 385
+        x: 1929
         y: 0
-        width: 47
-        height: 51
+        width: 227
+        height: 251
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -259,13 +259,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Big_bloated_walk_0: 2611235946416943796
-      Big_bloated_walk_1: -274988314132968985
-      Big_bloated_walk_2: 3181458697981658110
-      Big_bloated_walk_3: -6299322133579728815
-      Big_bloated_walk_4: 8197710861447424269
-      Big_bloated_walk_5: 6604019187936291385
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
