@@ -1,16 +1,19 @@
 fileFormatVersion: 2
-guid: 1a9fc7e1f4dfcf945a388704daffd3f5
+guid: 0db44e6e18dbd16448ee2c2b58ce7f3c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7588353388349702493
-    second: GraveRobber_hurt_0
+      213: -3644441308507176469
+    second: Run_dust_8x38_0
   - first:
-      213: 6374375613726006911
-    second: GraveRobber_hurt_1
+      213: -1969177156983318726
+    second: Run_dust_8x38_1
   - first:
-      213: 7496859555948530725
-    second: GraveRobber_hurt_2
+      213: -8296675050805976332
+    second: Run_dust_8x38_2
+  - first:
+      213: -4500358900846533503
+    second: Run_dust_8x38_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -57,7 +60,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -102,95 +105,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: iOS
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: VisionOS
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: tvOS
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WindowsStoreApps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: GraveRobber_hurt_0
+      name: Run_dust_8x38_0
       rect:
         serializedVersion: 2
-        x: 5
+        x: 1
         y: 0
-        width: 21
-        height: 34
+        width: 42
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -199,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d5147bea33f3f4960800000000000000
-      internalID: 7588353388349702493
+      spriteID: be18ba160f75c6dc0800000000000000
+      internalID: -3644441308507176469
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GraveRobber_hurt_1
+      name: Run_dust_8x38_1
       rect:
         serializedVersion: 2
-        x: 54
+        x: 60
         y: 0
-        width: 21
-        height: 34
+        width: 39
+        height: 6
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -221,20 +146,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f7e1d0909d4567850800000000000000
-      internalID: 6374375613726006911
+      spriteID: a3712321fc31ca4e0800000000000000
+      internalID: -1969177156983318726
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GraveRobber_hurt_2
+      name: Run_dust_8x38_2
       rect:
         serializedVersion: 2
-        x: 102
+        x: 116
         y: 0
-        width: 20
-        height: 34
+        width: 42
+        height: 7
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -243,8 +168,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 52c0e4bcb023a0860800000000000000
-      internalID: 7496859555948530725
+      spriteID: 4f22ddbbff94cdc80800000000000000
+      internalID: -8296675050805976332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Run_dust_8x38_3
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 0
+        width: 37
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18466417c638b81c0800000000000000
+      internalID: -4500358900846533503
       vertices: []
       indices: 
       edges: []
@@ -262,7 +209,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Run_dust_8x38_0: -3644441308507176469
+      Run_dust_8x38_1: -1969177156983318726
+      Run_dust_8x38_2: -8296675050805976332
+      Run_dust_8x38_3: -4500358900846533503
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

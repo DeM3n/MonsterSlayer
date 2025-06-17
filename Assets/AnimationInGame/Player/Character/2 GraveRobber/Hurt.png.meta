@@ -1,16 +1,16 @@
 fileFormatVersion: 2
-guid: 1a9fc7e1f4dfcf945a388704daffd3f5
+guid: fcb6df07808ab0a469e67e57fe2c17ad
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7588353388349702493
-    second: GraveRobber_hurt_0
+      213: -2048800907179887802
+    second: Hurt_0
   - first:
-      213: 6374375613726006911
-    second: GraveRobber_hurt_1
+      213: 490842205202310979
+    second: Hurt_1
   - first:
-      213: 7496859555948530725
-    second: GraveRobber_hurt_2
+      213: -3720053754089064719
+    second: Hurt_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -102,95 +102,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: iOS
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: VisionOS
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: tvOS
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WindowsStoreApps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: GraveRobber_hurt_0
+      name: Hurt_0
       rect:
         serializedVersion: 2
-        x: 5
+        x: 29
         y: 0
-        width: 21
-        height: 34
+        width: 97
+        height: 166
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -199,20 +121,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d5147bea33f3f4960800000000000000
-      internalID: 7588353388349702493
+      spriteID: 6437b001e623193e0800000000000000
+      internalID: -2048800907179887802
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GraveRobber_hurt_1
+      name: Hurt_1
       rect:
         serializedVersion: 2
-        x: 54
+        x: 274
         y: 0
-        width: 21
-        height: 34
+        width: 97
+        height: 166
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -221,20 +143,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f7e1d0909d4567850800000000000000
-      internalID: 6374375613726006911
+      spriteID: 3476ad19262dfc600800000000000000
+      internalID: 490842205202310979
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GraveRobber_hurt_2
+      name: Hurt_2
       rect:
         serializedVersion: 2
-        x: 102
+        x: 514
         y: 0
-        width: 20
-        height: 34
+        width: 92
+        height: 166
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -243,8 +165,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 52c0e4bcb023a0860800000000000000
-      internalID: 7496859555948530725
+      spriteID: 1f6b92202d6bf5cc0800000000000000
+      internalID: -3720053754089064719
       vertices: []
       indices: 
       edges: []
@@ -262,7 +184,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Hurt_0: -2048800907179887802
+      Hurt_1: 490842205202310979
+      Hurt_2: -3720053754089064719
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

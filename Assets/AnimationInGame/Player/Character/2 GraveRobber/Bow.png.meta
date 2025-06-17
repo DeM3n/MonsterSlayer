@@ -1,16 +1,25 @@
 fileFormatVersion: 2
-guid: 1a9fc7e1f4dfcf945a388704daffd3f5
+guid: 256ada4fab0d6294bbb40ed864a283c6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7588353388349702493
-    second: GraveRobber_hurt_0
+      213: -7856493677412862020
+    second: Bow_0
   - first:
-      213: 6374375613726006911
-    second: GraveRobber_hurt_1
+      213: 9177565795109621906
+    second: Bow_1
   - first:
-      213: 7496859555948530725
-    second: GraveRobber_hurt_2
+      213: 8308161197919842540
+    second: Bow_2
+  - first:
+      213: 8397226182628513416
+    second: Bow_3
+  - first:
+      213: -7222818359471190614
+    second: Bow_4
+  - first:
+      213: 4704730849205151557
+    second: Bow_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -184,13 +193,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: GraveRobber_hurt_0
+      name: Bow_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 0
-        width: 21
-        height: 34
+        x: 24
+        y: 9
+        width: 42
+        height: 65
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -199,20 +208,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d5147bea33f3f4960800000000000000
-      internalID: 7588353388349702493
+      spriteID: cb734b930a028f290800000000000000
+      internalID: -7856493677412862020
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GraveRobber_hurt_1
+      name: Bow_1
       rect:
         serializedVersion: 2
-        x: 54
-        y: 0
-        width: 21
-        height: 34
+        x: 117
+        y: 9
+        width: 39
+        height: 65
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -221,20 +230,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f7e1d0909d4567850800000000000000
-      internalID: 6374375613726006911
+      spriteID: 290d84047734d5f70800000000000000
+      internalID: 9177565795109621906
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GraveRobber_hurt_2
+      name: Bow_2
       rect:
         serializedVersion: 2
-        x: 102
-        y: 0
-        width: 20
-        height: 34
+        x: 209
+        y: 9
+        width: 39
+        height: 65
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -243,8 +252,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 52c0e4bcb023a0860800000000000000
-      internalID: 7496859555948530725
+      spriteID: ce032ba47948c4370800000000000000
+      internalID: 8308161197919842540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bow_3
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 9
+        width: 46
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8869e2209b0f88470800000000000000
+      internalID: 8397226182628513416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bow_4
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 9
+        width: 44
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aadcc8e58f463cb90800000000000000
+      internalID: -7222818359471190614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bow_5
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 9
+        width: 39
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 547e1b6d7cf8a4140800000000000000
+      internalID: 4704730849205151557
       vertices: []
       indices: 
       edges: []
@@ -262,7 +337,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Bow_0: -7856493677412862020
+      Bow_1: 9177565795109621906
+      Bow_2: 8308161197919842540
+      Bow_3: 8397226182628513416
+      Bow_4: -7222818359471190614
+      Bow_5: 4704730849205151557
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

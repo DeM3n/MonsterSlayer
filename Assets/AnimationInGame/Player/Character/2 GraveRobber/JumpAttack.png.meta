@@ -1,16 +1,25 @@
 fileFormatVersion: 2
-guid: 1a9fc7e1f4dfcf945a388704daffd3f5
+guid: 1bef114db1bcfde41a3bedc95497d7be
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7588353388349702493
-    second: GraveRobber_hurt_0
+      213: 2540389110289181886
+    second: JumpAttack_0
   - first:
-      213: 6374375613726006911
-    second: GraveRobber_hurt_1
+      213: 8483976198845052953
+    second: JumpAttack_1
   - first:
-      213: 7496859555948530725
-    second: GraveRobber_hurt_2
+      213: 3541691981770530940
+    second: JumpAttack_2
+  - first:
+      213: -3297658120855038214
+    second: JumpAttack_3
+  - first:
+      213: -8835444115165061092
+    second: JumpAttack_4
+  - first:
+      213: 4840494861642812752
+    second: JumpAttack_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -102,117 +111,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: iOS
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: VisionOS
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: tvOS
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WindowsStoreApps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: GraveRobber_hurt_0
-      rect:
-        serializedVersion: 2
-        x: 5
-        y: 0
-        width: 21
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d5147bea33f3f4960800000000000000
-      internalID: 7588353388349702493
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GraveRobber_hurt_1
+      name: JumpAttack_0
       rect:
         serializedVersion: 2
         x: 54
-        y: 0
-        width: 21
-        height: 34
+        y: 39
+        width: 82
+        height: 157
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -221,20 +130,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f7e1d0909d4567850800000000000000
-      internalID: 6374375613726006911
+      spriteID: ebcae0eaf66414320800000000000000
+      internalID: 2540389110289181886
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GraveRobber_hurt_2
+      name: JumpAttack_1
       rect:
         serializedVersion: 2
-        x: 102
-        y: 0
-        width: 20
-        height: 34
+        x: 259
+        y: 39
+        width: 112
+        height: 162
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -243,8 +152,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 52c0e4bcb023a0860800000000000000
-      internalID: 7496859555948530725
+      spriteID: 918370f17632db570800000000000000
+      internalID: 8483976198845052953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpAttack_2
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 39
+        width: 152
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c70284db71e962130800000000000000
+      internalID: 3541691981770530940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpAttack_3
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 64
+        width: 157
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af6d0cb296d5c32d0800000000000000
+      internalID: -3297658120855038214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpAttack_4
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 54
+        width: 97
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1065c2b362326580800000000000000
+      internalID: -8835444115165061092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpAttack_5
+      rect:
+        serializedVersion: 2
+        x: 1224
+        y: 39
+        width: 102
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05dc25d3e64ec2340800000000000000
+      internalID: 4840494861642812752
       vertices: []
       indices: 
       edges: []
@@ -262,7 +259,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      JumpAttack_0: 2540389110289181886
+      JumpAttack_1: 8483976198845052953
+      JumpAttack_2: 3541691981770530940
+      JumpAttack_3: -3297658120855038214
+      JumpAttack_4: -8835444115165061092
+      JumpAttack_5: 4840494861642812752
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

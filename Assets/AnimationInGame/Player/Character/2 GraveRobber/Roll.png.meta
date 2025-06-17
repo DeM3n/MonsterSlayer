@@ -1,16 +1,25 @@
 fileFormatVersion: 2
-guid: 1a9fc7e1f4dfcf945a388704daffd3f5
+guid: 42c8b5be60c6dd148ab143dd700880fe
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7588353388349702493
-    second: GraveRobber_hurt_0
+      213: -1541513601985774774
+    second: Roll_0
   - first:
-      213: 6374375613726006911
-    second: GraveRobber_hurt_1
+      213: -7983745396288232634
+    second: Roll_1
   - first:
-      213: 7496859555948530725
-    second: GraveRobber_hurt_2
+      213: -7351514667388473569
+    second: Roll_2
+  - first:
+      213: 5034399978413682347
+    second: Roll_3
+  - first:
+      213: 4811183109302650746
+    second: Roll_4
+  - first:
+      213: -6445079334599217287
+    second: Roll_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -102,95 +111,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: iOS
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: VisionOS
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: tvOS
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WindowsStoreApps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: GraveRobber_hurt_0
+      name: Roll_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 0
-        width: 21
-        height: 34
+        x: 104
+        y: 39
+        width: 137
+        height: 167
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -199,20 +130,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d5147bea33f3f4960800000000000000
-      internalID: 7588353388349702493
+      spriteID: a4b7439db817b9ae0800000000000000
+      internalID: -1541513601985774774
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GraveRobber_hurt_1
+      name: Roll_1
       rect:
         serializedVersion: 2
-        x: 54
-        y: 0
-        width: 21
-        height: 34
+        x: 364
+        y: 34
+        width: 147
+        height: 127
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -221,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f7e1d0909d4567850800000000000000
-      internalID: 6374375613726006911
+      spriteID: 643641d9cd9043190800000000000000
+      internalID: -7983745396288232634
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GraveRobber_hurt_2
+      name: Roll_2
       rect:
         serializedVersion: 2
-        x: 102
-        y: 0
-        width: 20
-        height: 34
+        x: 624
+        y: 34
+        width: 132
+        height: 112
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -243,8 +174,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 52c0e4bcb023a0860800000000000000
-      internalID: 7496859555948530725
+      spriteID: f1f6c392c5c2af990800000000000000
+      internalID: -7351514667388473569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roll_3
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 34
+        width: 97
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: baee4926b18cdd540800000000000000
+      internalID: 5034399978413682347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roll_4
+      rect:
+        serializedVersion: 2
+        x: 1134
+        y: 34
+        width: 137
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7708531c81c4c240800000000000000
+      internalID: 4811183109302650746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roll_5
+      rect:
+        serializedVersion: 2
+        x: 1394
+        y: 34
+        width: 102
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97fa0002e7a7e86a0800000000000000
+      internalID: -6445079334599217287
       vertices: []
       indices: 
       edges: []
@@ -262,7 +259,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Roll_0: -1541513601985774774
+      Roll_1: -7983745396288232634
+      Roll_2: -7351514667388473569
+      Roll_3: 5034399978413682347
+      Roll_4: 4811183109302650746
+      Roll_5: -6445079334599217287
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

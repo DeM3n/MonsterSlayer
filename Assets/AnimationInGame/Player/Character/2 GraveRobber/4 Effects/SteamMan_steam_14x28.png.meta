@@ -1,16 +1,16 @@
 fileFormatVersion: 2
-guid: 1a9fc7e1f4dfcf945a388704daffd3f5
+guid: b5387c51cd8136044a7622cb27f0ffaa
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7588353388349702493
-    second: GraveRobber_hurt_0
+      213: -1399072068329116459
+    second: SteamMan_steam_14x28_0
   - first:
-      213: 6374375613726006911
-    second: GraveRobber_hurt_1
+      213: -8427817442988094556
+    second: SteamMan_steam_14x28_1
   - first:
-      213: 7496859555948530725
-    second: GraveRobber_hurt_2
+      213: -3744657768262402130
+    second: SteamMan_steam_14x28_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -184,13 +184,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: GraveRobber_hurt_0
+      name: SteamMan_steam_14x28_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 0
-        width: 21
-        height: 34
+        x: 0
+        y: 2
+        width: 5
+        height: 7
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -199,20 +199,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d5147bea33f3f4960800000000000000
-      internalID: 7588353388349702493
+      spriteID: 5dc6210dd5f759ce0800000000000000
+      internalID: -1399072068329116459
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GraveRobber_hurt_1
+      name: SteamMan_steam_14x28_1
       rect:
         serializedVersion: 2
-        x: 54
+        x: 18
         y: 0
-        width: 21
-        height: 34
+        width: 7
+        height: 7
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -221,20 +221,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f7e1d0909d4567850800000000000000
-      internalID: 6374375613726006911
+      spriteID: 4ab8ad620b06a0b80800000000000000
+      internalID: -8427817442988094556
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GraveRobber_hurt_2
+      name: SteamMan_steam_14x28_2
       rect:
         serializedVersion: 2
-        x: 102
+        x: 50
         y: 0
-        width: 20
-        height: 34
+        width: 62
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -243,8 +243,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 52c0e4bcb023a0860800000000000000
-      internalID: 7496859555948530725
+      spriteID: eafff4d899d480cc0800000000000000
+      internalID: -3744657768262402130
       vertices: []
       indices: 
       edges: []
@@ -262,7 +262,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SteamMan_steam_14x28_0: -1399072068329116459
+      SteamMan_steam_14x28_1: -8427817442988094556
+      SteamMan_steam_14x28_2: -3744657768262402130
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

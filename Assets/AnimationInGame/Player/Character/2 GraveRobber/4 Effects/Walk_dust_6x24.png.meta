@@ -1,16 +1,22 @@
 fileFormatVersion: 2
-guid: 1a9fc7e1f4dfcf945a388704daffd3f5
+guid: 2883e3e2a44a80c44859e7ead96dd2ab
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7588353388349702493
-    second: GraveRobber_hurt_0
+      213: -6937763980585617509
+    second: Walk_dust_6x24_0
   - first:
-      213: 6374375613726006911
-    second: GraveRobber_hurt_1
+      213: 5486089950268081657
+    second: Walk_dust_6x24_1
   - first:
-      213: 7496859555948530725
-    second: GraveRobber_hurt_2
+      213: 5454454412059621693
+    second: Walk_dust_6x24_2
+  - first:
+      213: -8383506729478007974
+    second: Walk_dust_6x24_3
+  - first:
+      213: 4759341815237328108
+    second: Walk_dust_6x24_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -184,13 +190,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: GraveRobber_hurt_0
+      name: Walk_dust_6x24_0
       rect:
         serializedVersion: 2
-        x: 5
+        x: 0
         y: 0
-        width: 21
-        height: 34
+        width: 6
+        height: 6
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -199,20 +205,42 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d5147bea33f3f4960800000000000000
-      internalID: 7588353388349702493
+      spriteID: b97b1b1ea6c18bf90800000000000000
+      internalID: -6937763980585617509
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GraveRobber_hurt_1
+      name: Walk_dust_6x24_1
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 0
+        width: 26
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f5c1934eb1822c40800000000000000
+      internalID: 5486089950268081657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk_dust_6x24_2
       rect:
         serializedVersion: 2
         x: 54
         y: 0
-        width: 21
-        height: 34
+        width: 8
+        height: 5
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -221,20 +249,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f7e1d0909d4567850800000000000000
-      internalID: 6374375613726006911
+      spriteID: d39306a836d12bb40800000000000000
+      internalID: 5454454412059621693
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GraveRobber_hurt_2
+      name: Walk_dust_6x24_3
       rect:
         serializedVersion: 2
-        x: 102
+        x: 73
         y: 0
-        width: 20
-        height: 34
+        width: 27
+        height: 6
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -243,8 +271,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 52c0e4bcb023a0860800000000000000
-      internalID: 7496859555948530725
+      spriteID: a53dd591c0dc7ab80800000000000000
+      internalID: -8383506729478007974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk_dust_6x24_4
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 0
+        width: 26
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cec32e53a249c0240800000000000000
+      internalID: 4759341815237328108
       vertices: []
       indices: 
       edges: []
@@ -262,7 +312,12 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Walk_dust_6x24_0: -6937763980585617509
+      Walk_dust_6x24_1: 5486089950268081657
+      Walk_dust_6x24_2: 5454454412059621693
+      Walk_dust_6x24_3: -8383506729478007974
+      Walk_dust_6x24_4: 4759341815237328108
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

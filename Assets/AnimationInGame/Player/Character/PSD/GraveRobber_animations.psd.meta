@@ -1,16 +1,10 @@
 fileFormatVersion: 2
-guid: 1a9fc7e1f4dfcf945a388704daffd3f5
+guid: 25268a23c40c33447a03d070cd17947b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7588353388349702493
-    second: GraveRobber_hurt_0
-  - first:
-      213: 6374375613726006911
-    second: GraveRobber_hurt_1
-  - first:
-      213: 7496859555948530725
-    second: GraveRobber_hurt_2
+      213: -1072833816645536947
+    second: GraveRobber_animations_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -184,13 +178,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: GraveRobber_hurt_0
+      name: GraveRobber_animations_0
       rect:
         serializedVersion: 2
-        x: 5
+        x: 0
         y: 0
-        width: 21
-        height: 34
+        width: 288
+        height: 576
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -199,52 +193,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d5147bea33f3f4960800000000000000
-      internalID: 7588353388349702493
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GraveRobber_hurt_1
-      rect:
-        serializedVersion: 2
-        x: 54
-        y: 0
-        width: 21
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f7e1d0909d4567850800000000000000
-      internalID: 6374375613726006911
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GraveRobber_hurt_2
-      rect:
-        serializedVersion: 2
-        x: 102
-        y: 0
-        width: 20
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 52c0e4bcb023a0860800000000000000
-      internalID: 7496859555948530725
+      spriteID: d43f0dfe3578c11f0800000000000000
+      internalID: -1072833816645536947
       vertices: []
       indices: 
       edges: []
@@ -262,7 +212,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      GraveRobber_animations_0: -1072833816645536947
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
