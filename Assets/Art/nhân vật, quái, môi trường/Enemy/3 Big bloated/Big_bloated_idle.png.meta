@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9ce8c42b082280a41a5e9c18923b3444
+guid: 5c9b73759d1d7134ca5d61564ad897c2
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -112,10 +112,10 @@ TextureImporter:
       name: Big_bloated_idle_0
       rect:
         serializedVersion: 2
-        x: 25
+        x: 129
         y: 0
-        width: 48
-        height: 49
+        width: 232
+        height: 241
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,10 +134,10 @@ TextureImporter:
       name: Big_bloated_idle_1
       rect:
         serializedVersion: 2
-        x: 97
+        x: 489
         y: 0
-        width: 48
-        height: 50
+        width: 232
+        height: 246
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,10 +156,10 @@ TextureImporter:
       name: Big_bloated_idle_2
       rect:
         serializedVersion: 2
-        x: 169
+        x: 849
         y: 0
-        width: 48
-        height: 50
+        width: 232
+        height: 246
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,10 +178,10 @@ TextureImporter:
       name: Big_bloated_idle_3
       rect:
         serializedVersion: 2
-        x: 241
+        x: 1209
         y: 0
-        width: 47
-        height: 49
+        width: 231
+        height: 241
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

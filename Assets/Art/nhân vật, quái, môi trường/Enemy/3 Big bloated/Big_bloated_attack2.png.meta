@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 24a7bae2c66ec904aba2e8f31383b40e
+guid: 7c1f9e6228cd1a0409ca21be7eb35cf1
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -118,10 +118,10 @@ TextureImporter:
       name: Big_bloated_attack2_0
       rect:
         serializedVersion: 2
-        x: 25
+        x: 129
         y: 0
-        width: 48
-        height: 49
+        width: 232
+        height: 241
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,10 +140,10 @@ TextureImporter:
       name: Big_bloated_attack2_1
       rect:
         serializedVersion: 2
-        x: 97
+        x: 489
         y: 0
-        width: 48
-        height: 49
+        width: 232
+        height: 241
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -162,10 +162,10 @@ TextureImporter:
       name: Big_bloated_attack2_2
       rect:
         serializedVersion: 2
-        x: 168
+        x: 844
         y: 0
-        width: 39
-        height: 48
+        width: 187
+        height: 236
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,10 +184,10 @@ TextureImporter:
       name: Big_bloated_attack2_3
       rect:
         serializedVersion: 2
-        x: 238
+        x: 1194
         y: 0
-        width: 37
-        height: 45
+        width: 177
+        height: 221
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -206,10 +206,10 @@ TextureImporter:
       name: Big_bloated_attack2_4
       rect:
         serializedVersion: 2
-        x: 312
+        x: 1564
         y: 0
-        width: 35
-        height: 47
+        width: 167
+        height: 231
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -228,10 +228,10 @@ TextureImporter:
       name: Big_bloated_attack2_5
       rect:
         serializedVersion: 2
-        x: 385
+        x: 1929
         y: 0
-        width: 47
-        height: 49
+        width: 231
+        height: 241
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -259,13 +259,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Big_bloated_attack2_0: 8381793015261855184
-      Big_bloated_attack2_1: -739206191136949861
-      Big_bloated_attack2_2: -930569273659187026
-      Big_bloated_attack2_3: -4742231247441042730
-      Big_bloated_attack2_4: 5978455570441945759
-      Big_bloated_attack2_5: -1142014176122406768
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

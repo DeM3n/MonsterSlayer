@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: 226dc635d0b2ad447b8a04547f547239
+guid: c67f44461816ac54686dc0ab60c9b9f4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4799331749690793536
-    second: Battle_turtle_attack3_0
+      213: -3556270253826571225
+    second: Battle_turtle_attack3 1_0
   - first:
-      213: 4604560181526486866
-    second: Battle_turtle_attack3_1
+      213: -7408768912005707846
+    second: Battle_turtle_attack3 1_1
   - first:
-      213: -4284457657573066132
-    second: Battle_turtle_attack3_2
+      213: 502205437898867372
+    second: Battle_turtle_attack3 1_2
   - first:
-      213: -597632744482848894
-    second: Battle_turtle_attack3_3
+      213: -5292954682212059138
+    second: Battle_turtle_attack3 1_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -109,13 +109,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Battle_turtle_attack3_0
+      name: Battle_turtle_attack3 1_0
       rect:
         serializedVersion: 2
-        x: 12
+        x: 64
         y: 0
-        width: 60
-        height: 40
+        width: 292
+        height: 196
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 04ed2936cc6aa9240800000000000000
-      internalID: 4799331749690793536
+      spriteID: 724016bcb0795aec0800000000000000
+      internalID: -3556270253826571225
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Battle_turtle_attack3_1
+      name: Battle_turtle_attack3 1_1
       rect:
         serializedVersion: 2
-        x: 83
+        x: 419
         y: 0
-        width: 60
-        height: 44
+        width: 292
+        height: 216
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -146,20 +146,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 25f5bcec61fa6ef30800000000000000
-      internalID: 4604560181526486866
+      spriteID: ab741f88de3ce2990800000000000000
+      internalID: -7408768912005707846
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Battle_turtle_attack3_2
+      name: Battle_turtle_attack3 1_2
       rect:
         serializedVersion: 2
-        x: 156
+        x: 784
         y: 0
-        width: 61
-        height: 42
+        width: 297
+        height: 206
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -168,20 +168,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c6ab721e57c8a84c0800000000000000
-      internalID: -4284457657573066132
+      spriteID: ca24b3a5f2138f600800000000000000
+      internalID: 502205437898867372
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Battle_turtle_attack3_3
+      name: Battle_turtle_attack3 1_3
       rect:
         serializedVersion: 2
-        x: 228
+        x: 1144
         y: 0
-        width: 60
-        height: 40
+        width: 296
+        height: 196
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -190,8 +190,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 28f35fe6f28c4b7f0800000000000000
-      internalID: -597632744482848894
+      spriteID: ef7728282c5ab86b0800000000000000
+      internalID: -5292954682212059138
       vertices: []
       indices: 
       edges: []
@@ -210,10 +210,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Battle_turtle_attack3_0: 4799331749690793536
-      Battle_turtle_attack3_1: 4604560181526486866
-      Battle_turtle_attack3_2: -4284457657573066132
-      Battle_turtle_attack3_3: -597632744482848894
+      Battle_turtle_attack3 1_0: -3556270253826571225
+      Battle_turtle_attack3 1_1: -7408768912005707846
+      Battle_turtle_attack3 1_2: 502205437898867372
+      Battle_turtle_attack3 1_3: -5292954682212059138
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

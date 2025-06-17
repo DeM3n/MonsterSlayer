@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: f2db46ef915dd79468f12a9b34d222a7
+guid: 126512a8c7d2cfc4395e36e00bfc2e32
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -745335983551294080
-    second: Battle_turtle_death_0
+      213: -1776345332904926015
+    second: Battle_turtle_death 1_0
   - first:
-      213: 1413736703080880621
-    second: Battle_turtle_death_1
+      213: -1696999540756466016
+    second: Battle_turtle_death 1_1
   - first:
-      213: -2814591724678127849
-    second: Battle_turtle_death_2
+      213: 4291753493166867876
+    second: Battle_turtle_death 1_2
   - first:
-      213: 4803066790257568877
-    second: Battle_turtle_death_3
+      213: 5092217370268712125
+    second: Battle_turtle_death 1_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -109,13 +109,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Battle_turtle_death_0
+      name: Battle_turtle_death 1_0
       rect:
         serializedVersion: 2
-        x: 12
+        x: 64
         y: 0
-        width: 60
-        height: 40
+        width: 292
+        height: 196
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 085db163fd808a5f0800000000000000
-      internalID: -745335983551294080
+      spriteID: 1c467c9c4572957e0800000000000000
+      internalID: -1776345332904926015
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Battle_turtle_death_1
+      name: Battle_turtle_death 1_1
       rect:
         serializedVersion: 2
-        x: 81
+        x: 409
         y: 0
-        width: 61
-        height: 36
+        width: 297
+        height: 176
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -146,20 +146,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: de951198a0a9e9310800000000000000
-      internalID: 1413736703080880621
+      spriteID: 0a6b535a8eb0378e0800000000000000
+      internalID: -1696999540756466016
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Battle_turtle_death_2
+      name: Battle_turtle_death 1_2
       rect:
         serializedVersion: 2
-        x: 151
+        x: 759
         y: 0
-        width: 61
-        height: 31
+        width: 297
+        height: 151
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -168,20 +168,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 71f5ece1dbf80f8d0800000000000000
-      internalID: -2814591724678127849
+      spriteID: 4a5c0c7301f5f8b30800000000000000
+      internalID: 4291753493166867876
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Battle_turtle_death_3
+      name: Battle_turtle_death 1_3
       rect:
         serializedVersion: 2
-        x: 220
+        x: 1104
         y: 0
-        width: 64
-        height: 27
+        width: 312
+        height: 131
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -190,8 +190,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d6c27c94ccbe7a240800000000000000
-      internalID: 4803066790257568877
+      spriteID: dbcb0f1f7b03ba640800000000000000
+      internalID: 5092217370268712125
       vertices: []
       indices: 
       edges: []
@@ -210,10 +210,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Battle_turtle_death_0: -745335983551294080
-      Battle_turtle_death_1: 1413736703080880621
-      Battle_turtle_death_2: -2814591724678127849
-      Battle_turtle_death_3: 4803066790257568877
+      Battle_turtle_death 1_0: -1776345332904926015
+      Battle_turtle_death 1_1: -1696999540756466016
+      Battle_turtle_death 1_2: 4291753493166867876
+      Battle_turtle_death 1_3: 5092217370268712125
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

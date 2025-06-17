@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 21513a1b68d2e5544b6eb25d37ba436f
+guid: db1d1e0a9ab98904f82ce2f8480465d0
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -112,10 +112,10 @@ TextureImporter:
       name: Big_bloated_sneer_0
       rect:
         serializedVersion: 2
-        x: 24
+        x: 124
         y: 0
-        width: 35
-        height: 49
+        width: 167
+        height: 241
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,10 +134,10 @@ TextureImporter:
       name: Big_bloated_sneer_1
       rect:
         serializedVersion: 2
-        x: 78
+        x: 394
         y: 0
-        width: 53
-        height: 49
+        width: 257
+        height: 241
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,10 +156,10 @@ TextureImporter:
       name: Big_bloated_sneer_2
       rect:
         serializedVersion: 2
-        x: 150
+        x: 754
         y: 0
-        width: 53
-        height: 49
+        width: 257
+        height: 241
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,10 +178,10 @@ TextureImporter:
       name: Big_bloated_sneer_3
       rect:
         serializedVersion: 2
-        x: 241
+        x: 1209
         y: 0
-        width: 34
-        height: 49
+        width: 162
+        height: 241
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -209,11 +209,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Big_bloated_sneer_0: -3048450981199114079
-      Big_bloated_sneer_1: 4929683827969577892
-      Big_bloated_sneer_2: 6445873776808225405
-      Big_bloated_sneer_3: 1792260290927399258
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

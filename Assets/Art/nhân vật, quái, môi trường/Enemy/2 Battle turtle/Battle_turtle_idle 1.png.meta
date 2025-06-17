@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: 1cb960217a575d54e8f23ade02a775ba
+guid: 50405358ec38fe541a1c41c8c4f9a293
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6367435941145438522
-    second: Battle_turtle_walk_0
+      213: 7911971260015199845
+    second: Battle_turtle_idle 1_0
   - first:
-      213: -964699810674189049
-    second: Battle_turtle_walk_1
+      213: 6485136289760029265
+    second: Battle_turtle_idle 1_1
   - first:
-      213: -1264537070576716603
-    second: Battle_turtle_walk_2
+      213: -5511459856261564811
+    second: Battle_turtle_idle 1_2
   - first:
-      213: -6070529807300369025
-    second: Battle_turtle_walk_3
+      213: -3208329403346204428
+    second: Battle_turtle_idle 1_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -109,13 +109,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Battle_turtle_walk_0
+      name: Battle_turtle_idle 1_0
       rect:
         serializedVersion: 2
-        x: 12
+        x: 64
         y: 0
-        width: 60
-        height: 40
+        width: 292
+        height: 196
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a39670a904dad5850800000000000000
-      internalID: 6367435941145438522
+      spriteID: 5664e4a01f7fccd60800000000000000
+      internalID: 7911971260015199845
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Battle_turtle_walk_1
+      name: Battle_turtle_idle 1_1
       rect:
         serializedVersion: 2
-        x: 85
+        x: 424
         y: 0
-        width: 59
-        height: 41
+        width: 292
+        height: 196
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -146,20 +146,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 70dd0e522a2bc92f0800000000000000
-      internalID: -964699810674189049
+      spriteID: 15a24278815dff950800000000000000
+      internalID: 6485136289760029265
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Battle_turtle_walk_2
+      name: Battle_turtle_idle 1_2
       rect:
         serializedVersion: 2
-        x: 156
+        x: 779
         y: 0
-        width: 60
-        height: 41
+        width: 292
+        height: 196
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -168,20 +168,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5c436feeb36737ee0800000000000000
-      internalID: -1264537070576716603
+      spriteID: 57634b1367c5383b0800000000000000
+      internalID: -5511459856261564811
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Battle_turtle_walk_3
+      name: Battle_turtle_idle 1_3
       rect:
         serializedVersion: 2
-        x: 227
+        x: 1144
         y: 0
-        width: 61
-        height: 40
+        width: 292
+        height: 196
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -190,8 +190,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f75e075ad4521cba0800000000000000
-      internalID: -6070529807300369025
+      spriteID: 4f8cb17f769b973d0800000000000000
+      internalID: -3208329403346204428
       vertices: []
       indices: 
       edges: []
@@ -209,11 +209,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Battle_turtle_walk_0: 6367435941145438522
-      Battle_turtle_walk_1: -964699810674189049
-      Battle_turtle_walk_2: -1264537070576716603
-      Battle_turtle_walk_3: -6070529807300369025
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

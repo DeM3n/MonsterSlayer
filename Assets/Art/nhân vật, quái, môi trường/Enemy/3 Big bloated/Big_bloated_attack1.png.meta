@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 98a4090d67e7c3f4b94fea3c639d177b
+guid: 2e36cdc04a077b748b1ac01f8ad15db6
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -23,6 +23,9 @@ TextureImporter:
   - first:
       213: -4653784334689298103
     second: Big_bloated_attack1_6
+  - first:
+      213: -933520409812464426
+    second: Big_bloated_attack1_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -121,12 +124,12 @@ TextureImporter:
       name: Big_bloated_attack1_0
       rect:
         serializedVersion: 2
-        x: 25
+        x: 129
         y: 0
-        width: 48
-        height: 49
+        width: 232
+        height: 241
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -143,12 +146,12 @@ TextureImporter:
       name: Big_bloated_attack1_1
       rect:
         serializedVersion: 2
-        x: 98
+        x: 494
         y: 0
-        width: 47
-        height: 49
+        width: 227
+        height: 241
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -165,12 +168,12 @@ TextureImporter:
       name: Big_bloated_attack1_2
       rect:
         serializedVersion: 2
-        x: 153
+        x: 769
         y: 0
-        width: 50
-        height: 49
+        width: 242
+        height: 241
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -184,37 +187,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Big_bloated_attack1_3
-      rect:
-        serializedVersion: 2
-        x: 226
-        y: 38
-        width: 6
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cf1abfe0409b62c70800000000000000
-      internalID: 8946041136900448764
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Big_bloated_attack1_4
       rect:
         serializedVersion: 2
-        x: 228
+        x: 1130
         y: 0
-        width: 47
-        height: 49
+        width: 241
+        height: 241
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -228,37 +209,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Big_bloated_attack1_5
-      rect:
-        serializedVersion: 2
-        x: 294
-        y: 0
-        width: 53
-        height: 49
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b68c2adee9e9afe50800000000000000
-      internalID: 6843956989171779691
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Big_bloated_attack1_6
       rect:
         serializedVersion: 2
-        x: 385
+        x: 1469
         y: 0
-        width: 34
-        height: 49
+        width: 262
+        height: 241
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -271,11 +230,33 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Big_bloated_attack1_7
+      rect:
+        serializedVersion: 2
+        x: 1929
+        y: 0
+        width: 162
+        height: 241
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dc0d8e12287b03f0800000000000000
+      internalID: -933520409812464426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 29010b8bc16932d4884ff3d38e4f3c02
     internalID: 0
     vertices: []
     indices: 
@@ -288,10 +269,9 @@ TextureImporter:
       Big_bloated_attack1_0: -1575178575165340752
       Big_bloated_attack1_1: 5724669923096345686
       Big_bloated_attack1_2: 6868210877141530874
-      Big_bloated_attack1_3: 8946041136900448764
       Big_bloated_attack1_4: 4227453507427601749
-      Big_bloated_attack1_5: 6843956989171779691
       Big_bloated_attack1_6: -4653784334689298103
+      Big_bloated_attack1_7: -933520409812464426
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
