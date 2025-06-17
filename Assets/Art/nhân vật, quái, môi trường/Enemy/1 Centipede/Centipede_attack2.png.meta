@@ -121,9 +121,9 @@ TextureImporter:
         x: 134
         y: 0
         width: 227
-        height: 186
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 202
+      alignment: 9
+      pivot: {x: 0.5, y: 0.44399908}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -144,8 +144,8 @@ TextureImporter:
         y: 0
         width: 212
         height: 201
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.4999997, y: 0.45171422}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -162,12 +162,12 @@ TextureImporter:
       name: Centipede_attack2_scaled_5x_pngcrushed_2
       rect:
         serializedVersion: 2
-        x: 869
+        x: 868
         y: 0
         width: 212
         height: 201
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000003, y: 0.44806015}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -185,11 +185,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1124
-        y: 0
+        y: 1
         width: 312
         height: 201
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.59925413, y: 0.4399999}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -209,9 +209,9 @@ TextureImporter:
         x: 1464
         y: 0
         width: 327
-        height: 131
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5887776, y: 0.44058105}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -231,9 +231,9 @@ TextureImporter:
         x: 1849
         y: 0
         width: 307
-        height: 131
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 201
+      alignment: 9
+      pivot: {x: 0.57041705, y: 0.44000012}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -250,7 +250,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 3d0f2d334e429b6478c52e2dd1806034
     internalID: 0
     vertices: []
     indices: 

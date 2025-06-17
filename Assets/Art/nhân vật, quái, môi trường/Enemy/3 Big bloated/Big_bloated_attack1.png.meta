@@ -126,7 +126,7 @@ TextureImporter:
         serializedVersion: 2
         x: 129
         y: 0
-        width: 232
+        width: 262
         height: 241
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -148,7 +148,7 @@ TextureImporter:
         serializedVersion: 2
         x: 494
         y: 0
-        width: 227
+        width: 262
         height: 241
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -170,10 +170,10 @@ TextureImporter:
         serializedVersion: 2
         x: 769
         y: 0
-        width: 242
+        width: 262
         height: 241
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.7867659, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -192,10 +192,10 @@ TextureImporter:
         serializedVersion: 2
         x: 1130
         y: 0
-        width: 241
+        width: 262
         height: 241
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.7655597, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -216,8 +216,8 @@ TextureImporter:
         y: 0
         width: 262
         height: 241
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.8243068, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -234,9 +234,9 @@ TextureImporter:
       name: Big_bloated_attack1_7
       rect:
         serializedVersion: 2
-        x: 1929
+        x: 1898
         y: 0
-        width: 162
+        width: 262
         height: 241
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
