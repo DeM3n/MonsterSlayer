@@ -118,12 +118,12 @@ TextureImporter:
       name: Big_bloated_attack4_0
       rect:
         serializedVersion: 2
-        x: 129
+        x: 69
         y: 0
-        width: 232
-        height: 241
+        width: 287
+        height: 251
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -140,12 +140,12 @@ TextureImporter:
       name: Big_bloated_attack4_1
       rect:
         serializedVersion: 2
-        x: 494
+        x: 441
         y: 0
-        width: 227
-        height: 246
+        width: 287
+        height: 251
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -162,12 +162,12 @@ TextureImporter:
       name: Big_bloated_attack4_2
       rect:
         serializedVersion: 2
-        x: 859
+        x: 815
         y: 0
-        width: 222
+        width: 287
         height: 251
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.47928077, y: 0.5000001}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -184,12 +184,12 @@ TextureImporter:
       name: Big_bloated_attack4_3
       rect:
         serializedVersion: 2
-        x: 1179
+        x: 1128
         y: 0
-        width: 192
-        height: 231
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 287
+        height: 251
+      alignment: 9
+      pivot: {x: 0.586724, y: 0.49999997}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -206,12 +206,12 @@ TextureImporter:
       name: Big_bloated_attack4_4
       rect:
         serializedVersion: 2
-        x: 1444
+        x: 1409
         y: 0
-        width: 287
-        height: 231
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 334
+        height: 251
+      alignment: 9
+      pivot: {x: 0.68830955, y: 0.4965247}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -233,7 +233,7 @@ TextureImporter:
         width: 162
         height: 236
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -250,7 +250,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 33685d49c6f9b8b4bb421d09e4306fd2
     internalID: 0
     vertices: []
     indices: 
@@ -259,7 +259,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Big_bloated_attack4_0: 5879025747910416009
+      Big_bloated_attack4_1: 6732837758258243662
+      Big_bloated_attack4_2: -4434536772781467362
+      Big_bloated_attack4_3: 7841438225752685616
+      Big_bloated_attack4_4: -2918312331246370321
+      Big_bloated_attack4_5: 8974075919842392762
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

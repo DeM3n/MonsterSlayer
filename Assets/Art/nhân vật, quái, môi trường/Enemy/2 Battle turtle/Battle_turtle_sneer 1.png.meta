@@ -118,12 +118,12 @@ TextureImporter:
       name: Battle_turtle_sneer 1_0
       rect:
         serializedVersion: 2
-        x: 64
+        x: 63
         y: 0
-        width: 292
+        width: 293
         height: 196
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -140,12 +140,12 @@ TextureImporter:
       name: Battle_turtle_sneer 1_1
       rect:
         serializedVersion: 2
-        x: 424
+        x: 423
         y: 0
         width: 297
         height: 196
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -164,10 +164,10 @@ TextureImporter:
         serializedVersion: 2
         x: 794
         y: 0
-        width: 287
+        width: 286
         height: 251
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3923278}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -188,8 +188,8 @@ TextureImporter:
         y: 0
         width: 282
         height: 251
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3923278}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -206,12 +206,12 @@ TextureImporter:
       name: Battle_turtle_sneer 1_4
       rect:
         serializedVersion: 2
-        x: 1479
+        x: 1478
         y: 0
-        width: 312
-        height: 196
+        width: 313
+        height: 195
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -233,7 +233,7 @@ TextureImporter:
         width: 307
         height: 196
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -250,7 +250,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 83309208a01be4749b55db035f905373
     internalID: 0
     vertices: []
     indices: 
@@ -259,7 +259,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Battle_turtle_sneer 1_0: -4086353201730252200
+      Battle_turtle_sneer 1_1: 1913478932760439054
+      Battle_turtle_sneer 1_2: 8496747466286443460
+      Battle_turtle_sneer 1_3: 4033510038372014885
+      Battle_turtle_sneer 1_4: 8779865349051056081
+      Battle_turtle_sneer 1_5: 1557884341626753273
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
