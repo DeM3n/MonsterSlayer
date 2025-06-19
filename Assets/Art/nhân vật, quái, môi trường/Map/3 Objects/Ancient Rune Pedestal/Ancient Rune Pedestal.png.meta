@@ -1,19 +1,22 @@
 fileFormatVersion: 2
-guid: 996cb953e6ffaa840946a759cec4a1b8
+guid: 3837546505b3cc540bea452c91d0062a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8386645779307496254
-    second: Rune_0
+      213: -1418208517656146566
+    second: Ancient Rune Pedestal_0
   - first:
-      213: -4902359646237975460
-    second: Rune_1
+      213: 7563009651520205921
+    second: Ancient Rune Pedestal_1
   - first:
-      213: 2420670467884986134
-    second: Rune_2
+      213: -2135886204655987231
+    second: Ancient Rune Pedestal_2
   - first:
-      213: -3217309594128102768
-    second: Rune_3
+      213: 6981091339768942880
+    second: Ancient Rune Pedestal_3
+  - first:
+      213: -1155289243876264120
+    second: Ancient Rune Pedestal_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -109,13 +112,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Rune_0
+      name: Ancient Rune Pedestal_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 0
-        width: 35
-        height: 43
+        x: 11
+        y: 15
+        width: 234
+        height: 222
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +127,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2ccf85b1916ac9b80800000000000000
-      internalID: -8386645779307496254
+      spriteID: a7d0caffdd2815ce0800000000000000
+      internalID: -1418208517656146566
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rune_1
+      name: Ancient Rune Pedestal_1
       rect:
         serializedVersion: 2
-        x: 50
-        y: 5
-        width: 41
-        height: 41
+        x: 271
+        y: 11
+        width: 234
+        height: 222
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -146,20 +149,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c5c96c420e157fbb0800000000000000
-      internalID: -4902359646237975460
+      spriteID: 16476bf153535f860800000000000000
+      internalID: 7563009651520205921
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rune_2
+      name: Ancient Rune Pedestal_2
       rect:
         serializedVersion: 2
-        x: 101
-        y: 5
-        width: 35
-        height: 43
+        x: 535
+        y: 11
+        width: 234
+        height: 222
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -168,20 +171,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 61f209c17f2f79120800000000000000
-      internalID: 2420670467884986134
+      spriteID: 1e592d230decb52e0800000000000000
+      internalID: -2135886204655987231
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rune_3
+      name: Ancient Rune Pedestal_3
       rect:
         serializedVersion: 2
-        x: 152
-        y: 0
-        width: 29
-        height: 46
+        x: 791
+        y: 11
+        width: 234
+        height: 222
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -190,8 +193,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 09ac98d58f1d953d0800000000000000
-      internalID: -3217309594128102768
+      spriteID: 021db7b0691d1e060800000000000000
+      internalID: 6981091339768942880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ancient Rune Pedestal_4
+      rect:
+        serializedVersion: 2
+        x: 1031
+        y: 11
+        width: 234
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 847fcedbd8697ffe0800000000000000
+      internalID: -1155289243876264120
       vertices: []
       indices: 
       edges: []
