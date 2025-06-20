@@ -26,7 +26,17 @@
             Die();
         }
     }
+public void Heal(int amount)
+    {
+        if (isDead) return; // Nếu đã chết thì không hồi máu
 
+        CurrentHealth += amount;
+        if (CurrentHealth > MaxHealth)
+        {
+            CurrentHealth = MaxHealth; // Giới hạn máu không vượt quá MaxHealth
+        }
+        Debug.Log("Player healed. Current Health: " + CurrentHealth);
+    }
     void Die()
     {
         isDead = true;
