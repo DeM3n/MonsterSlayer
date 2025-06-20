@@ -1,51 +1,111 @@
 using UnityEngine;
+
 public class PlayerMovement : MonoBehaviour
 {
-    public float jumpForce = 4f;
+    [Header("Movement Settings")]
     public float moveSpeed = 5f;
-    private Rigidbody2D rb;
-    private float horizontalInput;
+    public float jumpForce = 10f;
     public bool canMove = true;
-    private bool isGrounded = false;
 
-    public Transform groundCheck;
-    public float groundCheckRadius = 0.2f;
+    [Header("Ground Check Settings")]
+    public Transform groundCheckPosition;
+    public float groundCheckRadius = 0.1f;
     public LayerMask groundLayer;
+
+    private bool isGrounded = false;
+    private bool isFacingRight = true;
+    private float horizontalInput;
+
+    private Rigidbody2D rb;
+    private Animator animator;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
 
     void Update()
     {
-        if (!canMove) return;
-
-        horizontalInput = Input.GetAxisRaw("Horizontal");
-
-        // Nhảy nếu đang chạm đất và nhấn Space
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+        if (canMove)
         {
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+            horizontalInput = Input.GetAxis("Horizontal");
+
+            if (Input.GetButtonDown("Jump") && isGrounded)
+            {
+                Jump();
+            }
+
+            FlipSprite();
         }
 
-        // Lật hướng nhân vật
-        if (horizontalInput != 0)
-        {
-            Vector3 scale = transform.localScale;
-            scale.x = Mathf.Sign(horizontalInput) * Mathf.Abs(scale.x);
-            transform.localScale = scale;
-        }
+        UpdateAnimationStates();
     }
 
     void FixedUpdate()
     {
-        if (!canMove) return;
+        if (canMove)
+        {
+            rb.linearVelocity = new Vector2(horizontalInput * moveSpeed, rb.linearVelocity.y);
+        }
 
-        // Di chuyển ngang
-        rb.linearVelocity = new Vector2(horizontalInput * moveSpeed, rb.linearVelocity.y);
+        CheckIfGrounded();  // Optional: disable if using GroundCheck.cs with trigger
+    }
 
-        // Kiểm tra đang đứng trên đất
-        isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
+    void Jump()
+    {
+        rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+        isGrounded = false;
+    }
+
+    void FlipSprite()
+    {
+        if ((isFacingRight && horizontalInput < 0) || (!isFacingRight && horizontalInput > 0))
+        {
+            isFacingRight = !isFacingRight;
+            Vector3 scale = transform.localScale;
+            scale.x *= -1f;
+            transform.localScale = scale;
+        }
+    }
+
+    void CheckIfGrounded()
+    {
+        isGrounded = Physics2D.OverlapCircle(groundCheckPosition.position, groundCheckRadius, groundLayer);
+    }
+
+    void UpdateAnimationStates()
+    {
+        animator.SetFloat("Speed", Mathf.Abs(horizontalInput));
+
+        if (!isGrounded && rb.linearVelocity.y > 0.1f)
+        {
+            animator.SetBool("isJumping", true);
+            animator.SetBool("isFalling", false);
+        }
+        else if (!isGrounded && rb.linearVelocity.y < -0.1f)
+        {
+            animator.SetBool("isJumping", false);
+            animator.SetBool("isFalling", true);
+        }
+        else if (isGrounded)
+        {
+            animator.SetBool("isJumping", false);
+            animator.SetBool("isFalling", false);
+        }
+    }
+
+    public void SetGrounded(bool grounded)
+    {
+        isGrounded = grounded;
+    }
+
+    void OnDrawGizmosSelected()
+    {
+        if (groundCheckPosition != null)
+        {
+            Gizmos.color = Color.red;
+            Gizmos.DrawWireSphere(groundCheckPosition.position, groundCheckRadius);
+        }
     }
 }

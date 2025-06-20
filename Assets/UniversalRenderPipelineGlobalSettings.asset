@@ -57,6 +57,7 @@ MonoBehaviour:
       - rid: 3114554863623077888
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       - rid: 344366339897163776
       - rid: 344366339897163777
       - rid: 344366339897163778
@@ -72,6 +73,12 @@ MonoBehaviour:
       - rid: 344366382187544577
       - rid: 344366382187544578
       - rid: 344366382187544579
+>>>>>>> Stashed changes
+=======
+      - rid: 344366382187544650
+      - rid: 344366382187544651
+      - rid: 344366382187544652
+      - rid: 344366382187544653
 >>>>>>> Stashed changes
     m_RuntimeSettings:
       m_List: []
@@ -100,6 +107,7 @@ MonoBehaviour:
     RefIds:
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     - rid: 344366339897163776
 =======
     - rid: 344366339897163863
@@ -107,10 +115,14 @@ MonoBehaviour:
 =======
     - rid: 344366382187544576
 >>>>>>> Stashed changes
+=======
+    - rid: 344366382187544650
+>>>>>>> Stashed changes
       type: {class: ScreenSpaceAmbientOcclusionPersistentResources, ns: UnityEngine.Rendering.Universal, asm: Unity.RenderPipelines.Universal.Runtime}
       data:
         m_Shader: {fileID: 4800000, guid: 0849e84e3d62649e8882e9d6f056a017, type: 3}
         m_Version: 0
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
     - rid: 344366339897163777
@@ -119,6 +131,9 @@ MonoBehaviour:
 >>>>>>> Stashed changes
 =======
     - rid: 344366382187544577
+>>>>>>> Stashed changes
+=======
+    - rid: 344366382187544651
 >>>>>>> Stashed changes
       type: {class: PostProcessData/TextureResources, ns: UnityEngine.Rendering.Universal, asm: Unity.RenderPipelines.Universal.Runtime}
       data:
@@ -171,12 +186,16 @@ MonoBehaviour:
         m_TexturesResourcesVersion: 0
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     - rid: 344366339897163778
 =======
     - rid: 344366339897163865
 >>>>>>> Stashed changes
 =======
     - rid: 344366382187544578
+>>>>>>> Stashed changes
+=======
+    - rid: 344366382187544652
 >>>>>>> Stashed changes
       type: {class: ScreenSpaceAmbientOcclusionDynamicResources, ns: UnityEngine.Rendering.Universal, asm: Unity.RenderPipelines.Universal.Runtime}
       data:
@@ -191,12 +210,16 @@ MonoBehaviour:
         m_Version: 0
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     - rid: 344366339897163779
 =======
     - rid: 344366339897163866
 >>>>>>> Stashed changes
 =======
     - rid: 344366382187544579
+>>>>>>> Stashed changes
+=======
+    - rid: 344366382187544653
 >>>>>>> Stashed changes
       type: {class: PostProcessData/ShaderResources, ns: UnityEngine.Rendering.Universal, asm: Unity.RenderPipelines.Universal.Runtime}
       data:
