@@ -75,22 +75,31 @@ backgrounds[2].position = new Vector3(backgroundWidth, 0, 0);
         return min;
     }
     void AdjustBackgroundImmediately()
-{
-    for (int i = 0; i < backgrounds.Length; i++)
     {
-        float camX = mainCamera.position.x;
-        float bgX = backgrounds[i].position.x;
+        for (int i = 0; i < backgrounds.Length; i++)
+        {
+            float camX = mainCamera.position.x;
+            float bgX = backgrounds[i].position.x;
 
-        if (camX - bgX > backgroundWidth)
-        {
-            float rightMostX = GetRightMostX();
-            backgrounds[i].position = new Vector3(rightMostX + backgroundWidth, backgrounds[i].position.y, backgrounds[i].position.z);
-        }
-        else if (bgX - camX > backgroundWidth)
-        {
-            float leftMostX = GetLeftMostX();
-            backgrounds[i].position = new Vector3(leftMostX - backgroundWidth, backgrounds[i].position.y, backgrounds[i].position.z);
+            if (camX - bgX > backgroundWidth)
+            {
+                float rightMostX = GetRightMostX();
+                backgrounds[i].position = new Vector3(rightMostX + backgroundWidth, backgrounds[i].position.y, backgrounds[i].position.z);
+            }
+            else if (bgX - camX > backgroundWidth)
+            {
+                float leftMostX = GetLeftMostX();
+                backgrounds[i].position = new Vector3(leftMostX - backgroundWidth, backgrounds[i].position.y, backgrounds[i].position.z);
+            }
         }
     }
+public void ResetBackgroundPosition()
+{
+    // Đặt lại 3 background thành: Trái - Giữa - Phải so với camera hiện tại
+    Vector3 camPos = mainCamera.position;
+
+    backgrounds[0].position = new Vector3(camPos.x - backgroundWidth, backgrounds[0].position.y, backgrounds[0].position.z);
+    backgrounds[1].position = new Vector3(camPos.x, backgrounds[1].position.y, backgrounds[1].position.z);
+    backgrounds[2].position = new Vector3(camPos.x + backgroundWidth, backgrounds[2].position.y, backgrounds[2].position.z);
 }
 }

@@ -123,7 +123,7 @@ TextureImporter:
         width: 97
         height: 166
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -144,8 +144,8 @@ TextureImporter:
         y: 0
         width: 117
         height: 141
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.6453268, y: 0.52411777}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -162,12 +162,12 @@ TextureImporter:
       name: Death_2
       rect:
         serializedVersion: 2
-        x: 494
+        x: 495
         y: 0
         width: 162
         height: 121
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.51574403, y: 0.6264703}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -188,8 +188,8 @@ TextureImporter:
         y: 0
         width: 177
         height: 91
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.49039438, y: 0.90172315}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -206,12 +206,12 @@ TextureImporter:
       name: Death_4
       rect:
         serializedVersion: 2
-        x: 974
+        x: 971
         y: 0
         width: 172
-        height: 76
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 91
+      alignment: 9
+      pivot: {x: 0.49011514, y: 0.9138939}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -231,9 +231,9 @@ TextureImporter:
         x: 1214
         y: 0
         width: 177
-        height: 61
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 90
+      alignment: 9
+      pivot: {x: 0.49519858, y: 0.89023703}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -250,7 +250,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 46a11011533a44d409c07908e5d7141b
     internalID: 0
     vertices: []
     indices: 
