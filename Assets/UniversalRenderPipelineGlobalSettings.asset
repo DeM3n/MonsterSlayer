@@ -55,10 +55,17 @@ MonoBehaviour:
       - rid: 7752762179098771475
       - rid: 7752762179098771476
       - rid: 3114554863623077888
+<<<<<<< Updated upstream
       - rid: 344366406076465152
       - rid: 344366406076465153
       - rid: 344366406076465154
       - rid: 344366406076465155
+=======
+      - rid: 344366557253337088
+      - rid: 344366557253337089
+      - rid: 344366557253337090
+      - rid: 344366557253337091
+>>>>>>> Stashed changes
     m_RuntimeSettings:
       m_List: []
   m_AssetVersion: 8
@@ -84,12 +91,20 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
+<<<<<<< Updated upstream
     - rid: 344366406076465152
+=======
+    - rid: 344366557253337088
+>>>>>>> Stashed changes
       type: {class: ScreenSpaceAmbientOcclusionPersistentResources, ns: UnityEngine.Rendering.Universal, asm: Unity.RenderPipelines.Universal.Runtime}
       data:
         m_Shader: {fileID: 4800000, guid: 0849e84e3d62649e8882e9d6f056a017, type: 3}
         m_Version: 0
+<<<<<<< Updated upstream
     - rid: 344366406076465153
+=======
+    - rid: 344366557253337089
+>>>>>>> Stashed changes
       type: {class: PostProcessData/TextureResources, ns: UnityEngine.Rendering.Universal, asm: Unity.RenderPipelines.Universal.Runtime}
       data:
         blueNoise16LTex:
@@ -139,7 +154,11 @@ MonoBehaviour:
         smaaAreaTex: {fileID: 2800000, guid: d1f1048909d55cd4fa1126ab998f617e, type: 3}
         smaaSearchTex: {fileID: 2800000, guid: 51eee22c2a633ef4aada830eed57c3fd, type: 3}
         m_TexturesResourcesVersion: 0
+<<<<<<< Updated upstream
     - rid: 344366406076465154
+=======
+    - rid: 344366557253337090
+>>>>>>> Stashed changes
       type: {class: ScreenSpaceAmbientOcclusionDynamicResources, ns: UnityEngine.Rendering.Universal, asm: Unity.RenderPipelines.Universal.Runtime}
       data:
         m_BlueNoise256Textures:
@@ -151,7 +170,11 @@ MonoBehaviour:
         - {fileID: 2800000, guid: 3302065f671a8450b82c9ddf07426f3a, type: 3}
         - {fileID: 2800000, guid: 56a77a3e8d64f47b6afe9e3c95cb57d5, type: 3}
         m_Version: 0
+<<<<<<< Updated upstream
     - rid: 344366406076465155
+=======
+    - rid: 344366557253337091
+>>>>>>> Stashed changes
       type: {class: PostProcessData/ShaderResources, ns: UnityEngine.Rendering.Universal, asm: Unity.RenderPipelines.Universal.Runtime}
       data:
         stopNanPS: {fileID: 4800000, guid: 1121bb4e615ca3c48b214e79e841e823, type: 3}
