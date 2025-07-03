@@ -3,6 +3,7 @@ using UnityEngine.SceneManagement;
 public class GameUIManager : MonoBehaviour
 {
     public GameObject gameOverPanel;
+    public PlayerRespawn playerRespawn;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -19,8 +20,8 @@ public class GameUIManager : MonoBehaviour
     public void RestartGame()
     {
         Time.timeScale = 1f; // Khôi phục thời gian game
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name); // Tải lại cảnh hiện tại
-        CameraAutoMove.hasPlayedIntro = true;
+         gameOverPanel.SetActive(false);
+       playerRespawn.Respawn();
     }
     public void MainMenu()
     {

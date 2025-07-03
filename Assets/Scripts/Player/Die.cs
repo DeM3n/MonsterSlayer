@@ -2,23 +2,24 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class FallDeath : MonoBehaviour
 {
-    public float fallThreshold = -10f;  // Độ cao giới hạn, ví dụ -10
+    public float fallThreshold = -8f;  // Độ cao giới hạn, ví dụ -10
     public GameUIManager  uiManager;
-    private bool isDead = false;
+     public PlayerRespawn playerRespawn; 
+      private bool hasFallen = false;  
     void Update()
     {
-        if ( !isDead &&  transform.position.y < fallThreshold)
+       if (!hasFallen && transform.position.y < fallThreshold)
         {
-            Die();
+            hasFallen = true;
+            Debug.Log("☠️ Player đã rơi khỏi map!");
+
+            playerRespawn.Die();                    // Gọi die() của PlayerRespawn để xử lý
         }
     }
 
-     void Die()
+    public void ResetFallState()
     {
-        isDead = true;
-        Debug.Log("Player died by falling!");
-        uiManager.ShowGameOver();
-        Time.timeScale = 0f;
+        hasFallen = false; // Cho phép kiểm tra lại rơi lần tiếp theo
     }
     
 }
