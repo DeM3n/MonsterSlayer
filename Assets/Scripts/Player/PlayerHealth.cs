@@ -1,20 +1,20 @@
         using UnityEngine;
 
-        public class PlayerHealth : MonoBehaviour
+public class PlayerHealth : MonoBehaviour
 
-        {
-            private Animator animator;
-            public int MaxHealth = 5;
-            public int CurrentHealth ;
-            private bool isDead = false; // Trạng thái của người chơi
-            public PlayerMovement playerMovement;
-            void Start()
-            {
-                CurrentHealth = MaxHealth; // Initialize current health to max health
-            }
+{
+    private Animator animator;
+    public int MaxHealth = 5;
+    public int CurrentHealth;
+    private bool isDead = false; // Trạng thái của người chơi
+    public PlayerMovement playerMovement;
+    void Start()
+    {
+        CurrentHealth = MaxHealth; // Initialize current health to max health
+    }
 
-            // Update is called once per frame
-  public void TakeDamage(int damage)
+    // Update is called once per frame
+    public void TakeDamage(int damage)
     {
         if (isDead) return; // Nếu đã chết thì không nhận thêm dame
 
@@ -26,7 +26,7 @@
             Die();
         }
     }
-public void Heal(int amount)
+    public void Heal(int amount)
     {
         if (isDead) return; // Nếu đã chết thì không hồi máu
 
@@ -42,7 +42,17 @@ public void Heal(int amount)
         isDead = true;
         animator.SetTrigger("Die"); // Cần trigger "Die" trong Animator
         Debug.Log("Player has died.");
-         if (playerMovement != null)
+        if (playerMovement != null)
             playerMovement.enabled = false;
+    }
+    public void SetHealthtoZero()
+    {
+        CurrentHealth = 0; // Đặt máu về 0
+      
+    }
+     public void ResetHealth()
+    {
+        CurrentHealth = MaxHealth;
+      
     }
    }
