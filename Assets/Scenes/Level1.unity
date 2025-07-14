@@ -129,9 +129,10 @@ GameObject:
   m_Component:
   - component: {fileID: 5307456}
   - component: {fileID: 5307457}
-  m_Layer: 0
-  m_Name: LadderChild1
-  m_TagString: Untagged
+  - component: {fileID: 5307458}
+  m_Layer: 9
+  m_Name: 'Ladder '
+  m_TagString: Ladder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -149,11 +150,12 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 429016130}
-  - {fileID: 1479237465}
-  - {fileID: 1397136021}
-  - {fileID: 1426322357}
   - {fileID: 1709497661}
+  - {fileID: 1397136021}
+  - {fileID: 1479237465}
+  - {fileID: 1426322357}
+  - {fileID: 1516011276}
+  - {fileID: 429016130}
   - {fileID: 29037279}
   m_Father: {fileID: 312133559}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -172,6 +174,19 @@ MonoBehaviour:
   sortingLayerName: Default
   sortingOrder: 4
   applyOnStart: 1
+--- !u!114 &5307458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5307455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a26d7b400c842f14185c0c9836407633, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bottomPoint: {fileID: 429016130}
 --- !u!1 &27524993
 GameObject:
   m_ObjectHideFlags: 0
@@ -182,7 +197,7 @@ GameObject:
   m_Component:
   - component: {fileID: 27524994}
   - component: {fileID: 27524995}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: L3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -268,8 +283,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 29037279}
-  - component: {fileID: 29037280}
-  m_Layer: 0
+  - component: {fileID: 29037281}
+  m_Layer: 9
   m_Name: LadderArea
   m_TagString: Ladder
   m_Icon: {fileID: 0}
@@ -291,7 +306,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 5307456}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &29037280
+--- !u!61 &29037281
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -325,7 +340,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.043247223, y: 0.010501191}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -335,7 +350,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.7719698, y: 0.94285154}
   m_EdgeRadius: 0
 --- !u!1 &47102810
 GameObject:
@@ -347,7 +362,7 @@ GameObject:
   m_Component:
   - component: {fileID: 47102811}
   - component: {fileID: 47102812}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LadderArea (1)
   m_TagString: Ladder
   m_Icon: {fileID: 0}
@@ -691,7 +706,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 105974271}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
   m_Name: 
@@ -735,7 +750,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 105974271}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 49fbb5225384b58418113ffad66b014f, type: 3}
   m_Name: 
@@ -1066,7 +1081,7 @@ GameObject:
   m_Component:
   - component: {fileID: 150611010}
   - component: {fileID: 150611011}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: L4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1404,7 +1419,7 @@ GameObject:
   m_Component:
   - component: {fileID: 221276783}
   - component: {fileID: 221276784}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: L2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1889,10 +1904,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 312133559}
-  m_Layer: 0
-  m_Name: LadderParent
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Layer: 9
+  m_Name: 'Ladder '
+  m_TagString: Ladder
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2113,8 +2128,8 @@ GameObject:
   m_Component:
   - component: {fileID: 363568253}
   - component: {fileID: 363568254}
-  m_Layer: 0
-  m_Name: LadderChild2
+  m_Layer: 9
+  m_Name: 'Ladder '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2477,9 +2492,9 @@ GameObject:
   m_Component:
   - component: {fileID: 429016130}
   - component: {fileID: 429016131}
-  m_Layer: 0
-  m_Name: 1_0
-  m_TagString: Untagged
+  m_Layer: 9
+  m_Name: 'Ladder '
+  m_TagString: Ladder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2594,9 +2609,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 459121380}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: WallCheck
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2982,6 +2997,7 @@ GameObject:
   - component: {fileID: 540019287}
   - component: {fileID: 540019286}
   - component: {fileID: 540019288}
+  - component: {fileID: 540019289}
   m_Layer: 0
   m_Name: EnemyCenti
   m_TagString: Untagged
@@ -3081,6 +3097,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &540019289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 540019285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8978a28aa93f3fc4e8c2fb69cbdcfbb8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 3
 --- !u!1 &545300925
 GameObject:
   m_ObjectHideFlags: 0
@@ -3928,7 +3957,7 @@ GameObject:
   m_Component:
   - component: {fileID: 713265762}
   - component: {fileID: 713265763}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LadderArea (1)
   m_TagString: Ladder
   m_Icon: {fileID: 0}
@@ -4195,7 +4224,7 @@ GameObject:
   m_Component:
   - component: {fileID: 844629267}
   - component: {fileID: 844629268}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: L6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4784,8 +4813,8 @@ GameObject:
   m_Component:
   - component: {fileID: 991355188}
   - component: {fileID: 991355189}
-  m_Layer: 0
-  m_Name: LadderChild3 (1)
+  m_Layer: 9
+  m_Name: 'Ladder '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5059,7 +5088,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1103646085}
   - component: {fileID: 1103646086}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LadderArea (1)
   m_TagString: Ladder
   m_Icon: {fileID: 0}
@@ -5333,7 +5362,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1140479090}
   - component: {fileID: 1140479091}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: L6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5420,7 +5449,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1170221049}
   - component: {fileID: 1170221050}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: L4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5939,7 +5968,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1332630549}
   - component: {fileID: 1332630550}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: L4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6113,7 +6142,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1360043586}
   - component: {fileID: 1360043587}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: L1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6374,9 +6403,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1397136021}
   - component: {fileID: 1397136022}
-  m_Layer: 0
-  m_Name: 5_0
-  m_TagString: Untagged
+  m_Layer: 9
+  m_Name: 'Ladder '
+  m_TagString: Ladder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6514,9 +6543,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1426322357}
   - component: {fileID: 1426322358}
-  m_Layer: 0
-  m_Name: 5_0 (1)
-  m_TagString: Untagged
+  m_Layer: 9
+  m_Name: 'Ladder '
+  m_TagString: Ladder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6601,7 +6630,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1461678370}
   - component: {fileID: 1461678371}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: L5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6960,9 +6989,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1479237465}
   - component: {fileID: 1479237466}
-  m_Layer: 0
-  m_Name: 2_0 (1)
-  m_TagString: Untagged
+  m_Layer: 9
+  m_Name: 'Ladder '
+  m_TagString: Ladder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6979,8 +7008,7 @@ Transform:
   m_LocalPosition: {x: 0.009, y: 2.841, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1516011276}
+  m_Children: []
   m_Father: {fileID: 5307456}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1479237466
@@ -7222,9 +7250,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1516011276}
   - component: {fileID: 1516011277}
-  m_Layer: 0
-  m_Name: 2_0
-  m_TagString: Untagged
+  m_Layer: 9
+  m_Name: 'Ladder '
+  m_TagString: Ladder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7238,11 +7266,11 @@ Transform:
   m_GameObject: {fileID: 1516011275}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.888, z: 0}
+  m_LocalPosition: {x: 0.008999944, y: 0.95300007, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1479237465}
+  m_Father: {fileID: 5307456}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1516011277
 SpriteRenderer:
@@ -7396,8 +7424,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1553965727}
   - component: {fileID: 1553965728}
-  m_Layer: 0
-  m_Name: LadderChild3
+  m_Layer: 9
+  m_Name: 'Ladder '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7714,7 +7742,8 @@ GameObject:
   - component: {fileID: 1630984060}
   - component: {fileID: 1630984061}
   - component: {fileID: 1630984062}
-  m_Layer: 0
+  - component: {fileID: 1630984063}
+  m_Layer: 3
   m_Name: PlayableCharacter
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -7785,12 +7814,13 @@ Transform:
   m_GameObject: {fileID: 1630984049}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.28, y: -3.22, z: 0}
+  m_LocalPosition: {x: -5.64, y: -3.05, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1696259809}
   - {fileID: 459121380}
+  - {fileID: 2096723139}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &1630984052
@@ -7878,14 +7908,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdfbb5f9626082045a95a8db5b989a65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpForce: 5
   moveSpeed: 5
-  canMove: 1
+  jumpForce: 5
+  maxJumps: 2
+  rollForce: 10
+  rollCooldown: 1
+  climbSpeed: 4
   groundCheck: {fileID: 1696259809}
-  groundCheckRadius: 0.2
+  groundCheckRadius: 0.6
   groundLayer:
     serializedVersion: 2
     m_Bits: 128
+  canMove: 1
+  comboResetTime: 1
 --- !u!114 &1630984055
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8016,6 +8051,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameUIManager: {fileID: 1861515353}
+--- !u!114 &1630984063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1630984049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5939a923ed5cd346b6098948a612d72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
+  attackRange: 0.5
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &1642973762
 GameObject:
   m_ObjectHideFlags: 0
@@ -8026,7 +8078,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1642973763}
   - component: {fileID: 1642973764}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: L3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8412,9 +8464,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1696259809}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GroundCheck
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8444,9 +8496,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1709497661}
   - component: {fileID: 1709497662}
-  m_Layer: 0
-  m_Name: 6_0
-  m_TagString: Untagged
+  m_Layer: 9
+  m_Name: 'Ladder '
+  m_TagString: Ladder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8705,7 +8757,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1742248391}
   - component: {fileID: 1742248392}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: L3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9517,7 +9569,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1889878995}
   - component: {fileID: 1889878996}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: L2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18958,7 +19010,7 @@ CompositeCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 7b20669cf6fd72a428841c256d59420c, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -19905,7 +19957,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1939933747}
   - component: {fileID: 1939933748}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: L2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20580,6 +20632,84 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &2096723138
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2096723139}
+  - component: {fileID: 2096723140}
+  m_Layer: 3
+  m_Name: AttackPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2096723139
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2096723138}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.887, y: -0.31, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1630984051}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &2096723140
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2096723138}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -0.25852728, y: 0.32131243}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 0.48294544, y: 0.35737514}
+  m_EdgeRadius: 0
 --- !u!1 &2111564062
 GameObject:
   m_ObjectHideFlags: 0
@@ -20590,7 +20720,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2111564063}
   - component: {fileID: 2111564064}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: L5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
