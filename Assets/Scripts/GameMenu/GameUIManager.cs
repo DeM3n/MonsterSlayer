@@ -4,6 +4,7 @@ public class GameUIManager : MonoBehaviour
 {
     public GameObject gameOverPanel;
     public PlayerRespawn playerRespawn;
+    public PlayerHealth playerHealth;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -21,6 +22,7 @@ public class GameUIManager : MonoBehaviour
     {
         Time.timeScale = 1f; // Khôi phục thời gian game
          gameOverPanel.SetActive(false);
+          playerHealth.ResetHealth(); 
        playerRespawn.Respawn();
     }
     public void MainMenu()
