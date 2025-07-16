@@ -7,6 +7,8 @@ public class FallingTile : MonoBehaviour
     public float destroyAfter = 2f;
 
     private Rigidbody2D rb;
+    public GameObject smokeEffectPrefab;             // Prefab hiệu ứng khói
+    public Transform[] smokeSpawnPoints;   
     private bool hasTriggered = false;
 
     void Awake()
@@ -28,11 +30,19 @@ public class FallingTile : MonoBehaviour
     {
         Vector3 originalPos = transform.position;
 
+        if (smokeEffectPrefab != null && smokeSpawnPoints != null && smokeSpawnPoints.Length >= 2)
+        {
+           var smoke1 = Instantiate(smokeEffectPrefab, smokeSpawnPoints[0].position, Quaternion.identity);
+var smoke2 = Instantiate(smokeEffectPrefab, smokeSpawnPoints[1].position, Quaternion.identity);
+Destroy(smoke1, 2f);
+Destroy(smoke2, 2f);
+        }
+
         // Hiệu ứng rung
         for (int i = 0; i < 5; i++)
         {
-            transform.position = originalPos + Random.insideUnitSphere * 0.05f;
-            yield return new WaitForSeconds(0.05f);
+            transform.position = originalPos + Random.insideUnitSphere * 0.04f;
+            yield return new WaitForSeconds(0.0f);
         }
 
         transform.position = originalPos;
