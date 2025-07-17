@@ -18,7 +18,6 @@ public class PlayerMovement : MonoBehaviour
     private bool inLadderZone = false;
     public float climbSpeed = 4f;
     private float verticalInput;
-    private Ladder currentLadder;
 
     [Header("Ground Check")]
     public Transform groundCheck;
@@ -38,6 +37,9 @@ public class PlayerMovement : MonoBehaviour
     public float comboResetTime = 1f;
     private int attackIndex = 0;
     private float lastAttackTime;
+    private float nextAttackTime = 0f;
+
+    private float climbAnimTime = 0f;
 
     void Start()
     {
@@ -53,24 +55,21 @@ public class PlayerMovement : MonoBehaviour
         horizontalInput = Input.GetAxisRaw("Horizontal");
         verticalInput = Input.GetAxisRaw("Vertical");
 
+        if (inLadderZone && Mathf.Abs(verticalInput) > 0.1f)
+        {
+            if (!isClimbing) StartClimbing();
+        }
+
+        if (isClimbing && (!inLadderZone || isGrounded))
+        {
+            StopClimbing(true);
+        }
+
         HandleAttack();
         HandleJump();
         HandleRoll();
         HandleAnimations();
         FlipCharacter();
-
-        if (inLadderZone && !isClimbing && Mathf.Abs(verticalInput) > 0.1f)
-        {
-            StartClimbing();
-        }
-
-        if (isClimbing)
-        {
-            if (isGrounded)
-            {
-                StopClimbing(true);
-            }
-        }
     }
 
     void FixedUpdate()
@@ -80,16 +79,14 @@ public class PlayerMovement : MonoBehaviour
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
         if (isGrounded) jumpCount = 0;
 
-        if (isClimbing && currentLadder != null)
+        if (isClimbing)
         {
-            float newY = transform.position.y + verticalInput * climbSpeed * Time.fixedDeltaTime;
-            float bottomY = currentLadder.bottomPoint.position.y;
-            newY = Mathf.Max(newY, bottomY);
-            rb.linearVelocity = new Vector2(0, verticalInput * climbSpeed);
-            rb.MovePosition(new Vector2(transform.position.x, newY));
+            rb.gravityScale = 0f;
+            rb.linearVelocity = new Vector2(0f, verticalInput * climbSpeed);
         }
         else
         {
+            rb.gravityScale = originalGravity;
             rb.linearVelocity = new Vector2(horizontalInput * moveSpeed, rb.linearVelocity.y);
         }
 
@@ -126,39 +123,32 @@ public class PlayerMovement : MonoBehaviour
             rb.AddForce(new Vector2(rollDir * rollForce, 0), ForceMode2D.Impulse);
             animator.SetTrigger("Roll");
             lastRollTime = Time.time;
-            Invoke(nameof(EndAttack), 0.4f); // giữ nhân vật đứng yên trong thời gian animation roll
-        }
-    }
-
-
-    void HandleAttack()
-    {
-        if (Input.GetMouseButtonDown(0) && !isClimbing && !isAttacking)
-        {
-            if (Time.time - lastAttackTime > comboResetTime)
-            {
-                attackIndex = 0;
-            }
-
-            attackIndex = Mathf.Clamp(attackIndex + 1, 1, 2); // dùng Attack1 và Attack2
-            lastAttackTime = Time.time;
-            isAttacking = true;
-
-            if (!isGrounded)
-            {
-                animator.SetTrigger("JumpAttack");
-                Debug.Log("JumpAttack");
-            }
-            else
-            {
-                animator.SetTrigger("Attack" + attackIndex);
-                Debug.Log("Attack: " + attackIndex);
-            }
-
             Invoke(nameof(EndAttack), 0.4f);
         }
     }
 
+    void HandleAttack()
+    {
+        if (Time.time < nextAttackTime || isClimbing || isAttacking) return;
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            if (Time.time - lastAttackTime > comboResetTime)
+                attackIndex = 0;
+
+            attackIndex = Mathf.Clamp(attackIndex + 1, 1, 2);
+            lastAttackTime = Time.time;
+            nextAttackTime = Time.time + 1f;
+            isAttacking = true;
+
+            if (!isGrounded)
+                animator.SetTrigger("JumpAttack");
+            else
+                animator.SetTrigger("Attack" + attackIndex);
+
+            Invoke(nameof(EndAttack), 1f);
+        }
+    }
 
     void EndAttack()
     {
@@ -170,6 +160,8 @@ public class PlayerMovement : MonoBehaviour
         animator.SetBool("isRunning", !isClimbing && horizontalInput != 0);
         animator.SetBool("isClimbing", isClimbing);
         animator.SetBool("isJumping", !isGrounded && !isClimbing);
+
+        animator.SetFloat("ClimbSpeed", isClimbing ? Mathf.Abs(verticalInput) : 0f);
     }
 
     void FlipCharacter()
@@ -185,8 +177,9 @@ public class PlayerMovement : MonoBehaviour
     void StartClimbing()
     {
         isClimbing = true;
-        rb.gravityScale = 0f;
         rb.linearVelocity = Vector2.zero;
+        animator.Play("Climb", 0, climbAnimTime);
+        animator.speed = 1f;
     }
 
     void StopClimbing(bool exited)
@@ -194,23 +187,17 @@ public class PlayerMovement : MonoBehaviour
         isClimbing = false;
 
         if (exited)
-        {
             rb.gravityScale = originalGravity;
-        }
 
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f);
+        animator.speed = 1f;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Ladder"))
         {
-            Ladder ladder = other.GetComponentInParent<Ladder>();
-            if (ladder != null)
-            {
-                inLadderZone = true;
-                currentLadder = ladder;
-            }
+            inLadderZone = true;
         }
     }
 
@@ -220,7 +207,6 @@ public class PlayerMovement : MonoBehaviour
         {
             inLadderZone = false;
             StopClimbing(true);
-            currentLadder = null;
         }
     }
 }
