@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour
         {
             Instance = this;
             DontDestroyOnLoad(gameObject);
-            currentCheckpoint = initialSpawnPoint != null ? initialSpawnPoint.position : Vector3.zero;
+            currentCheckpoint = initialSpawnPoint != null ? initialSpawnPoint.position :new Vector3(0f, 5f, 0f);
         }
         else
         {
