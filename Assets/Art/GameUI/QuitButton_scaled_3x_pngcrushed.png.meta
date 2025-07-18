@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      QuitButton_scaled_3x_pngcrushed_0: -985252263995961722
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
