@@ -80,6 +80,7 @@ public class PlayerMovement : MonoBehaviour
 
         // 4) Animator parameters
         animator.SetFloat("Speed", Mathf.Abs(horizontalInput));
+        animator.SetBool("isRunning", Mathf.Abs(horizontalInput) > 0.1f); // <-- Added for isRunning condition
         animator.SetBool("isGrounded", isGrounded);
         animator.SetBool("isClimbing", isClimbing);
         animator.SetFloat("ClimbSpeed", Mathf.Abs(verticalInput));
@@ -109,7 +110,7 @@ public class PlayerMovement : MonoBehaviour
         if (isClimbing)
         {
             rb.gravityScale = 0f;
-            rb.linearVelocity = new Vector2(0f, verticalInput * climbSpeed);
+            rb.velocity = new Vector2(0f, verticalInput * climbSpeed);
             return;
         }
 
@@ -117,13 +118,13 @@ public class PlayerMovement : MonoBehaviour
         if (isAttacking)
         {
             rb.gravityScale = originalGravity;
-            rb.linearVelocity = new Vector2(horizontalInput * moveSpeed, rb.linearVelocity.y);
+            rb.velocity = new Vector2(horizontalInput * moveSpeed, rb.velocity.y);
             return;
         }
 
         // 3) Normal movement
         rb.gravityScale = originalGravity;
-        rb.linearVelocity = new Vector2(horizontalInput * moveSpeed, rb.linearVelocity.y);
+        rb.velocity = new Vector2(horizontalInput * moveSpeed, rb.velocity.y);
     }
 
     private void HandleJump()
@@ -136,13 +137,17 @@ public class PlayerMovement : MonoBehaviour
 
             jumpCount++;
             rb.gravityScale = originalGravity;
-            rb.linearVelocity = new Vector2(horizontalInput * moveSpeed, jumpForce);
+            rb.velocity = new Vector2(horizontalInput * moveSpeed, jumpForce);
             animator.SetTrigger("Jump");
         }
     }
 
     private void HandleRoll()
     {
+        // Debug log for troubleshooting
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+            Debug.Log("LeftShift pressed. isGrounded: " + isGrounded + ", isClimbing: " + isClimbing + ", isAttacking: " + isAttacking + ", time since last roll: " + (Time.time - lastRollTime));
+
         if (Input.GetKeyDown(KeyCode.LeftShift) &&
             isGrounded &&
             !isClimbing &&
@@ -161,8 +166,8 @@ public class PlayerMovement : MonoBehaviour
         float end = Time.time + rollDuration;
         while (Time.time < end)
         {
-            rb.linearVelocity = new Vector2(Mathf.Sign(transform.localScale.x) * rollForce,
-                                       rb.linearVelocity.y);
+            rb.velocity = new Vector2(Mathf.Sign(transform.localScale.x) * rollForce,
+                                       rb.velocity.y);
             yield return null;
         }
         isAttacking = false;
@@ -188,7 +193,7 @@ public class PlayerMovement : MonoBehaviour
             animator.SetTrigger(trigger);
 
             // STOP any residual sliding immediately
-            rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
+            rb.velocity = new Vector2(0f, rb.velocity.y);
 
             float dur = grounded ? groundAttackDuration : airAttackDuration;
             StartCoroutine(EndAttackAfter(dur));
@@ -204,7 +209,7 @@ public class PlayerMovement : MonoBehaviour
     private void StartClimbing()
     {
         isClimbing = true;
-        rb.linearVelocity = Vector2.zero;
+        rb.velocity = Vector2.zero;
         rb.gravityScale = 0f;
         animator.Play("Climb", 0, 0f);
     }
