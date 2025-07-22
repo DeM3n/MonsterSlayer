@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class GameUIManager : MonoBehaviour
 {
+    
     public GameObject gameOverPanel;
     public PlayerRespawn playerRespawn;
     public PlayerHealth playerHealth;
@@ -9,6 +10,9 @@ public class GameUIManager : MonoBehaviour
     void Start()
     {
         gameOverPanel.SetActive(false); // Ẩn bảng Game Over khi bắt đầu
+
+        if (playerHealth == null) Debug.LogError("PlayerHealth is not assigned!");
+        if (playerRespawn == null) Debug.LogError("PlayerRespawn is not assigned!");
     }
 
     // Update is called once per frame
