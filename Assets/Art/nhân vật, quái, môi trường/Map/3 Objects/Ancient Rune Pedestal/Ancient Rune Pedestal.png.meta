@@ -234,7 +234,12 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Ancient Rune Pedestal_0: -1418208517656146566
+      Ancient Rune Pedestal_1: 7563009651520205921
+      Ancient Rune Pedestal_2: -2135886204655987231
+      Ancient Rune Pedestal_3: 6981091339768942880
+      Ancient Rune Pedestal_4: -1155289243876264120
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
