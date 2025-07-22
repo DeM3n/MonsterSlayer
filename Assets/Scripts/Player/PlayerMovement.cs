@@ -110,7 +110,7 @@ public class PlayerMovement : MonoBehaviour
         if (isClimbing)
         {
             rb.gravityScale = 0f;
-            rb.velocity = new Vector2(0f, verticalInput * climbSpeed);
+            rb.linearVelocity = new Vector2(0f, verticalInput * climbSpeed);
             return;
         }
 
@@ -118,13 +118,13 @@ public class PlayerMovement : MonoBehaviour
         if (isAttacking)
         {
             rb.gravityScale = originalGravity;
-            rb.velocity = new Vector2(horizontalInput * moveSpeed, rb.velocity.y);
+            rb.linearVelocity = new Vector2(horizontalInput * moveSpeed, rb.linearVelocity.y);
             return;
         }
 
         // 3) Normal movement
         rb.gravityScale = originalGravity;
-        rb.velocity = new Vector2(horizontalInput * moveSpeed, rb.velocity.y);
+        rb.linearVelocity = new Vector2(horizontalInput * moveSpeed, rb.linearVelocity.y);
     }
 
     private void HandleJump()
@@ -137,7 +137,7 @@ public class PlayerMovement : MonoBehaviour
 
             jumpCount++;
             rb.gravityScale = originalGravity;
-            rb.velocity = new Vector2(horizontalInput * moveSpeed, jumpForce);
+            rb.linearVelocity = new Vector2(horizontalInput * moveSpeed, jumpForce);
             animator.SetTrigger("Jump");
         }
     }
@@ -166,8 +166,8 @@ public class PlayerMovement : MonoBehaviour
         float end = Time.time + rollDuration;
         while (Time.time < end)
         {
-            rb.velocity = new Vector2(Mathf.Sign(transform.localScale.x) * rollForce,
-                                       rb.velocity.y);
+            rb.linearVelocity = new Vector2(Mathf.Sign(transform.localScale.x) * rollForce,
+                                       rb.linearVelocity.y);
             yield return null;
         }
         isAttacking = false;
@@ -193,7 +193,7 @@ public class PlayerMovement : MonoBehaviour
             animator.SetTrigger(trigger);
 
             // STOP any residual sliding immediately
-            rb.velocity = new Vector2(0f, rb.velocity.y);
+            rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
 
             float dur = grounded ? groundAttackDuration : airAttackDuration;
             StartCoroutine(EndAttackAfter(dur));
@@ -209,7 +209,7 @@ public class PlayerMovement : MonoBehaviour
     private void StartClimbing()
     {
         isClimbing = true;
-        rb.velocity = Vector2.zero;
+        rb.linearVelocity = Vector2.zero;
         rb.gravityScale = 0f;
         animator.Play("Climb", 0, 0f);
     }
