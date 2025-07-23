@@ -50,12 +50,9 @@ public class PlayerHealth : MonoBehaviour
         CurrentHealth = 0; // Đặt máu về 0
       
     }
-    public void ResetHealth()
+     public void ResetHealth()
     {
         CurrentHealth = MaxHealth;
-         isDead = false; // Rất quan trọng: phải reset lại trạng thái chết
-    if (playerMovement != null)
-        playerMovement.enabled = true; 
       
     }
    }
