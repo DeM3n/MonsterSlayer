@@ -3,21 +3,19 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags:
-  - Ground
-  - Ladder
+  tags: []
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Player
+  - 
   - Water
   - UI
-  - Front
-  - Ground
   - 
-  - Ladder
-  - BG
+  - 
+  - 
+  - 
+  - 
   - 
   - 
   - 
@@ -42,15 +40,6 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: Layer1
-    uniqueID: 2920151121
-    locked: 0
-  - name: Layer2
-    uniqueID: 2500135025
-    locked: 0
-  - name: UI
-    uniqueID: 1986018437
     locked: 0
   m_RenderingLayers:
   - Default
