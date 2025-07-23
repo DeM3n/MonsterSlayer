@@ -19,15 +19,6 @@ private PlayerMovement movementScript;
 
     public void Respawn()
     {
-        Debug.Log("🔁 Respawn called");
-    Debug.Log("📌 GameManager.Instance = " + GameManager.Instance);
-
-    if (GameManager.Instance == null)
-    {
-        Debug.LogError("❌ GameManager.Instance is NULL! Cannot get checkpoint.");
-        return;
-    }
-    
         Vector3 checkpoint = GameManager.Instance.GetCurrentCheckpoint();
         transform.position = checkpoint;
         gameObject.SetActive(true); // Đảm bảo player được bật lại

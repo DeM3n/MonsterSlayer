@@ -42,7 +42,7 @@ Destroy(smoke2, 2f);
         for (int i = 0; i < 5; i++)
         {
             transform.position = originalPos + Random.insideUnitSphere * 0.04f;
-            yield return new WaitForSeconds(0.04f);
+            yield return new WaitForSeconds(0.0f);
         }
 
         transform.position = originalPos;

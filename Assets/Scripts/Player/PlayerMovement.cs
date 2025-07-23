@@ -1,7 +1,5 @@
 ﻿using UnityEngine;
-using System.Collections;
 
-[RequireComponent(typeof(Rigidbody2D), typeof(Animator))]
 public class PlayerMovement : MonoBehaviour
 {
     [Header("Movement")]
@@ -10,26 +8,15 @@ public class PlayerMovement : MonoBehaviour
     public int maxJumps = 2;
     private int jumpCount;
 
-    [Header("Dash (Roll)")]
-    public float rollForce = 12f;
+    [Header("Rolling (Dash)")]
+    public float rollForce = 10f;
     public float rollCooldown = 1f;
-    public float rollDuration = 0.4f;
     private float lastRollTime;
 
-    [Header("Attack Combo")]
-    public int maxCombo = 2;
-    public float comboResetTime = 1f;
-    public float groundAttackDuration = 0.5f;
-    public float airAttackDuration = 0.5f;
-    private int comboIndex;
-    private float lastAttackTime;
-    private bool isAttacking;
-
     [Header("Ladder")]
+    private bool isClimbing = false;
+    private bool inLadderZone = false;
     public float climbSpeed = 4f;
-    private bool inLadderZone;
-    private bool isClimbing;
-    private int ladderContacts;
     private float verticalInput;
 
     [Header("Ground Check")]
@@ -43,10 +30,18 @@ public class PlayerMovement : MonoBehaviour
     private Animator animator;
     private float originalGravity;
 
-    // External toggle for CameraAutoMove
     public bool canMove = true;
+    private bool isAttacking = false;
 
-    void Awake()
+    [Header("Attack")]
+    public float comboResetTime = 1f;
+    private int attackIndex = 0;
+    private float lastAttackTime;
+    private float nextAttackTime = 0f;
+
+    private float climbAnimTime = 0f;
+
+    void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
@@ -57,174 +52,151 @@ public class PlayerMovement : MonoBehaviour
     {
         if (!canMove) return;
 
-        // 1) Read inputs & ground state
         horizontalInput = Input.GetAxisRaw("Horizontal");
         verticalInput = Input.GetAxisRaw("Vertical");
-        isGrounded = Physics2D.OverlapCircle(
-                              groundCheck.position,
-                              groundCheckRadius,
-                              groundLayer
-                          );
-        if (isGrounded) jumpCount = 0;
 
-        // 2) Ladder logic
-        if (inLadderZone && Mathf.Abs(verticalInput) > 0.1f && !isClimbing)
-            StartClimbing();
+        if (inLadderZone && Mathf.Abs(verticalInput) > 0.1f)
+        {
+            if (!isClimbing) StartClimbing();
+        }
+
         if (isClimbing && (!inLadderZone || isGrounded))
-            StopClimbing();
+        {
+            StopClimbing(true);
+        }
 
-        // 3) Actions
+        HandleAttack();
         HandleJump();
         HandleRoll();
-        HandleAttack();
-
-        // 4) Animator parameters
-        animator.SetFloat("Speed", Mathf.Abs(horizontalInput));
-        animator.SetBool("isRunning", Mathf.Abs(horizontalInput) > 0.1f); // <-- Added for isRunning condition
-        animator.SetBool("isGrounded", isGrounded);
-        animator.SetBool("isClimbing", isClimbing);
-        animator.SetFloat("ClimbSpeed", Mathf.Abs(verticalInput));
-
-        // 5) Flip sprite
-        if (!isClimbing && horizontalInput != 0f)
-        {
-            Vector3 s = transform.localScale;
-            s.x = Mathf.Sign(horizontalInput) * Mathf.Abs(s.x);
-            transform.localScale = s;
-        }
+        HandleAnimations();
+        FlipCharacter();
     }
 
     void FixedUpdate()
     {
-        if (!canMove) return;
+        if (!canMove || isAttacking) return;
 
-        // re-check ground
-        isGrounded = Physics2D.OverlapCircle(
-                         groundCheck.position,
-                         groundCheckRadius,
-                         groundLayer
-                     );
+        isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
         if (isGrounded) jumpCount = 0;
 
-        // 1) Climbing
         if (isClimbing)
         {
             rb.gravityScale = 0f;
             rb.linearVelocity = new Vector2(0f, verticalInput * climbSpeed);
-            return;
         }
-
-        // 2) Steering during attack/dash
-        if (isAttacking)
+        else
         {
             rb.gravityScale = originalGravity;
             rb.linearVelocity = new Vector2(horizontalInput * moveSpeed, rb.linearVelocity.y);
-            return;
         }
 
-        // 3) Normal movement
-        rb.gravityScale = originalGravity;
-        rb.linearVelocity = new Vector2(horizontalInput * moveSpeed, rb.linearVelocity.y);
+        if (Time.time - lastAttackTime > comboResetTime)
+        {
+            attackIndex = 0;
+        }
     }
 
-    private void HandleJump()
+    void HandleJump()
     {
-        if (Input.GetKeyDown(KeyCode.Space) &&
-            (isGrounded || jumpCount < maxJumps))
+        if (Input.GetKeyDown(KeyCode.Space) && jumpCount < maxJumps)
         {
-            if (isClimbing)
-                StopClimbing();
-
             jumpCount++;
-            rb.gravityScale = originalGravity;
-            rb.linearVelocity = new Vector2(horizontalInput * moveSpeed, jumpForce);
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
             animator.SetTrigger("Jump");
+
+            if (isClimbing || inLadderZone)
+            {
+                StopClimbing(true);
+                float pushDir = Mathf.Sign(transform.localScale.x);
+                rb.linearVelocity = new Vector2(pushDir * 2f, jumpForce);
+            }
         }
     }
 
-    private void HandleRoll()
+    void HandleRoll()
     {
-        // Debug log for troubleshooting
-        if (Input.GetKeyDown(KeyCode.LeftShift))
-            Debug.Log("LeftShift pressed. isGrounded: " + isGrounded + ", isClimbing: " + isClimbing + ", isAttacking: " + isAttacking + ", time since last roll: " + (Time.time - lastRollTime));
-
-        if (Input.GetKeyDown(KeyCode.LeftShift) &&
-            isGrounded &&
-            !isClimbing &&
-            !isAttacking &&
-            Time.time - lastRollTime >= rollCooldown)
+        if (Input.GetKeyDown(KeyCode.LeftShift) && Time.time - lastRollTime > rollCooldown && isGrounded && !inLadderZone && !isAttacking)
         {
-            lastRollTime = Time.time;
             isAttacking = true;
+            float rollDir = Mathf.Sign(transform.localScale.x);
+            rb.linearVelocity = Vector2.zero;
+            rb.AddForce(new Vector2(rollDir * rollForce, 0), ForceMode2D.Impulse);
             animator.SetTrigger("Roll");
-            StartCoroutine(DoDash());
+            lastRollTime = Time.time;
+            Invoke(nameof(EndAttack), 0.4f);
         }
     }
 
-    private IEnumerator DoDash()
+    void HandleAttack()
     {
-        float end = Time.time + rollDuration;
-        while (Time.time < end)
-        {
-            rb.linearVelocity = new Vector2(Mathf.Sign(transform.localScale.x) * rollForce,
-                                       rb.linearVelocity.y);
-            yield return null;
-        }
-        isAttacking = false;
-    }
+        if (Time.time < nextAttackTime || isClimbing || isAttacking) return;
 
-    private void HandleAttack()
-    {
-        if (Input.GetMouseButtonDown(0) &&
-            !isClimbing &&
-            !isAttacking)
+        if (Input.GetMouseButtonDown(0))
         {
             if (Time.time - lastAttackTime > comboResetTime)
-                comboIndex = 0;
+                attackIndex = 0;
 
-            comboIndex = Mathf.Clamp(comboIndex + 1, 1, maxCombo);
+            attackIndex = Mathf.Clamp(attackIndex + 1, 1, 2);
             lastAttackTime = Time.time;
+            nextAttackTime = Time.time + 1f;
             isAttacking = true;
 
-            bool grounded = isGrounded;
-            string trigger = grounded
-                ? $"Attack{comboIndex}"
-                : "JumpAttack";
-            animator.SetTrigger(trigger);
+            if (!isGrounded)
+                animator.SetTrigger("JumpAttack");
+            else
+                animator.SetTrigger("Attack" + attackIndex);
 
-            // STOP any residual sliding immediately
-            rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
-
-            float dur = grounded ? groundAttackDuration : airAttackDuration;
-            StartCoroutine(EndAttackAfter(dur));
+            Invoke(nameof(EndAttack), 1f);
         }
     }
 
-    private IEnumerator EndAttackAfter(float delay)
+    void EndAttack()
     {
-        yield return new WaitForSeconds(delay);
         isAttacking = false;
     }
 
-    private void StartClimbing()
+    void HandleAnimations()
+    {
+        animator.SetBool("isRunning", !isClimbing && horizontalInput != 0);
+        animator.SetBool("isClimbing", isClimbing);
+        animator.SetBool("isJumping", !isGrounded && !isClimbing);
+
+        animator.SetFloat("ClimbSpeed", isClimbing ? Mathf.Abs(verticalInput) : 0f);
+    }
+
+    void FlipCharacter()
+    {
+        if (!isClimbing && horizontalInput != 0)
+        {
+            Vector3 scale = transform.localScale;
+            scale.x = Mathf.Sign(horizontalInput) * Mathf.Abs(scale.x);
+            transform.localScale = scale;
+        }
+    }
+
+    void StartClimbing()
     {
         isClimbing = true;
         rb.linearVelocity = Vector2.zero;
-        rb.gravityScale = 0f;
-        animator.Play("Climb", 0, 0f);
+        animator.Play("Climb", 0, climbAnimTime);
+        animator.speed = 1f;
     }
 
-    private void StopClimbing()
+    void StopClimbing(bool exited)
     {
         isClimbing = false;
-        rb.gravityScale = originalGravity;
+
+        if (exited)
+            rb.gravityScale = originalGravity;
+
+        rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f);
+        animator.speed = 1f;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Ladder"))
         {
-            ladderContacts++;
             inLadderZone = true;
         }
     }
@@ -233,13 +205,8 @@ public class PlayerMovement : MonoBehaviour
     {
         if (other.CompareTag("Ladder"))
         {
-            ladderContacts = Mathf.Max(0, ladderContacts - 1);
-            if (ladderContacts == 0)
-            {
-                inLadderZone = false;
-                if (isClimbing)
-                    StopClimbing();
-            }
+            inLadderZone = false;
+            StopClimbing(true);
         }
     }
 }
