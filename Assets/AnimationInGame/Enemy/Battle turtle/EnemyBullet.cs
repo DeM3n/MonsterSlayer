@@ -23,7 +23,6 @@ public class EnemyBulletScript : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
     void Update()
     {
         timer += Time.deltaTime;
@@ -40,7 +39,7 @@ public class EnemyBulletScript : MonoBehaviour
             PlayerHealth health = other.GetComponent<PlayerHealth>();
             if (health != null)
             {
-                health.TakeDamage(damage); 
+                health.TakeDamage(damage);
             }
 
             Destroy(gameObject);

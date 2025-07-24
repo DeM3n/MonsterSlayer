@@ -3,7 +3,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public bool isGameActive = true;
-      public static GameManager Instance { get; private set; }
+    public static GameManager Instance { get; private set; }
 
     [Header("Start Point")]
     public Transform initialSpawnPoint;
@@ -17,7 +17,7 @@ public class GameManager : MonoBehaviour
         {
             Instance = this;
             DontDestroyOnLoad(gameObject);
-            currentCheckpoint = initialSpawnPoint != null ? initialSpawnPoint.position :new Vector3(0f, 5f, 0f);
+            currentCheckpoint = initialSpawnPoint != null ? initialSpawnPoint.position : new Vector3(0f, 5f, 0f);
         }
         else
         {

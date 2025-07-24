@@ -822,7 +822,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 105974271}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
   m_Name: 
@@ -866,7 +866,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 105974271}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 49fbb5225384b58418113ffad66b014f, type: 3}
   m_Name: 
@@ -927,7 +927,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 105974271}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
@@ -5203,6 +5203,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &858023340
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 858023341}
+  m_Layer: 3
+  m_Name: AttackPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &858023341
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 858023340}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.624, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1630984051}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &861611630
 GameObject:
   m_ObjectHideFlags: 0
@@ -5879,7 +5910,7 @@ Transform:
   m_GameObject: {fileID: 1052377147}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.719898, y: -3.7099624, z: 0.070394896}
+  m_LocalPosition: {x: 4.78, y: -3.63, z: 0.070394896}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5904,13 +5935,13 @@ MonoBehaviour:
   facingLeft: 1
   moveSpeed: 2
   checkPoint: {fileID: 945842811}
-  distance: 1
+  distance: 2
   layerMask:
     serializedVersion: 2
     m_Bits: 128
   inRange: 1
   player: {fileID: 1630984051}
-  attackRange: 6
+  attackRange: 2.5
   retrieveDistance: 2.5
   chaseSpeed: 4
   animator: {fileID: 1052377152}
@@ -9917,6 +9948,7 @@ Transform:
   m_Children:
   - {fileID: 1696259809}
   - {fileID: 459121380}
+  - {fileID: 858023341}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &1630984052
@@ -10004,14 +10036,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdfbb5f9626082045a95a8db5b989a65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpForce: 5
   moveSpeed: 5
-  canMove: 1
+  jumpForce: 5
+  maxJumps: 2
+  rollForce: 10
+  rollCooldown: 1
+  climbSpeed: 4
   groundCheck: {fileID: 1696259809}
   groundCheckRadius: 0.2
   groundLayer:
     serializedVersion: 2
     m_Bits: 128
+  canMove: 1
+  heavyAttackCooldown: 1
 --- !u!114 &1630984055
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10102,7 +10139,7 @@ Animator:
   m_GameObject: {fileID: 1630984049}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 79ce62abf81a3264c9cb8b195261fb27, type: 2}
+  m_Controller: {fileID: 9100000, guid: 0bb540b5773770a4c93c28bbbc9cf110, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -22085,22 +22122,20 @@ MonoBehaviour:
   isDead: 0
   maxHealth: 5
   facingLeft: 1
-  moveSpeed: 2
-  chaseSpeed: 4
+  moveSpeed: 1
+  chaseSpeed: 2
   checkPoint: {fileID: 505952636}
   distance: 1
   layerMask:
     serializedVersion: 2
     m_Bits: 128
   player: {fileID: 1630984051}
-  attackRange: 10
+  attackRange: 7
   retrieveDistance: 2.5
   animator: {fileID: 2030921623}
-  attackPoint: {fileID: 1969937941}
-  attackRadius: 1
-  attackLayer:
-    serializedVersion: 2
-    m_Bits: 8
+  bulletPrefab: {fileID: 0}
+  firePoint: {fileID: 0}
+  fireCooldown: 3
 --- !u!1 &2036412892
 GameObject:
   m_ObjectHideFlags: 0

@@ -20,10 +20,11 @@ public class BattleTurtle : MonoBehaviour
     public float retrieveDistance = 2.5f;
     public Animator animator;
 
-    [Header("Melee Attack")]
-    public Transform attackPoint;
-    public float attackRadius = 1f;
-    public LayerMask attackLayer;
+    [Header("Shooting")]
+    public GameObject bulletPrefab;
+    public Transform firePoint;
+    public float fireCooldown = 2f;
+    private float fireTimer = 0f;
 
     private bool inRange = false;
 
@@ -46,7 +47,6 @@ public class BattleTurtle : MonoBehaviour
 
             if (playerDist > retrieveDistance)
             {
-               
                 animator.SetBool("Attack2", false);
                 Vector2 targetPos = new Vector2(player.position.x, transform.position.y);
                 transform.position = Vector2.MoveTowards(transform.position, targetPos, chaseSpeed * Time.deltaTime);
@@ -54,6 +54,12 @@ public class BattleTurtle : MonoBehaviour
             else
             {
                 animator.SetBool("Attack2", true);
+                fireTimer += Time.deltaTime;
+                if (fireTimer >= fireCooldown)
+                {
+                    fireTimer = 0f;
+                    Shoot();
+                }
             }
         }
         else
@@ -101,52 +107,27 @@ public class BattleTurtle : MonoBehaviour
         facingLeft = !facingLeft;
     }
 
-    public void Attack()
+    void Shoot()
     {
-        Collider2D collInfo = Physics2D.OverlapCircle(attackPoint.position, attackRadius, attackLayer);
-
-        if (collInfo && collInfo.GetComponent<PlayerMovement>() != null)
+        if (bulletPrefab != null && firePoint != null)
         {
-            // collInfo.GetComponent<PlayerMovement>().TakeDamage();
+            Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
         }
     }
 
     public void TakeDamage(int damage)
     {
         if (isDead) return;
-
         maxHealth -= damage;
-        if (maxHealth <= 0)
-        {
-            Die();
-        }
+        if (maxHealth <= 0) Die();
     }
 
     public void Die()
     {
         if (isDead) return;
-
         isDead = true;
         animator.SetTrigger("isDead");
         Debug.Log(this.transform.name + " Died.");
-    }
-
-    private void OnDrawGizmosSelected()
-    {
-        if (checkPoint != null)
-        {
-            Gizmos.color = Color.yellow;
-            Gizmos.DrawRay(checkPoint.position, Vector2.down * distance);
-        }
-
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, attackRange);
-
-        if (attackPoint != null)
-        {
-            Gizmos.color = Color.cyan;
-            Gizmos.DrawWireSphere(attackPoint.position, attackRadius);
-        }
     }
 
 #if UNITY_EDITOR
@@ -156,4 +137,21 @@ public class BattleTurtle : MonoBehaviour
         TakeDamage(maxHealth);
     }
 #endif
+
+    private void OnDrawGizmosSelected()
+    {
+        if (checkPoint != null)
+        {
+            Gizmos.color = Color.yellow;
+            Gizmos.DrawRay(checkPoint.position, Vector2.down * distance);
+        }
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, attackRange);
+
+        if (firePoint != null)
+        {
+            Gizmos.color = Color.cyan;
+            Gizmos.DrawWireSphere(firePoint.position, 0.2f);
+        }
+    }
 }

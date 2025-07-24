@@ -1,24 +1,24 @@
-        using UnityEngine;
+using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
-
 {
     private Animator animator;
     public int MaxHealth = 5;
     public int CurrentHealth;
-    private bool isDead = false; // Trạng thái của người chơi
+    private bool isDead = false;
     public PlayerMovement playerMovement;
+
     void Start()
     {
-        CurrentHealth = MaxHealth; // Initialize current health to max health
+        animator = GetComponent<Animator>();
+        CurrentHealth = MaxHealth;
     }
 
-    // Update is called once per frame
     public void TakeDamage(int damage)
     {
-        if (isDead) return; // Nếu đã chết thì không nhận thêm dame
-
+        if (isDead) return;
         CurrentHealth -= damage;
+        animator.SetTrigger("Hurt");
         Debug.Log("Player took damage. Current Health: " + CurrentHealth);
 
         if (CurrentHealth <= 0)
@@ -26,36 +26,42 @@ public class PlayerHealth : MonoBehaviour
             Die();
         }
     }
-    public void Heal(int amount)
-    {
-        if (isDead) return; // Nếu đã chết thì không hồi máu
 
-        CurrentHealth += amount;
-        if (CurrentHealth > MaxHealth)
-        {
-            CurrentHealth = MaxHealth; // Giới hạn máu không vượt quá MaxHealth
-        }
-        Debug.Log("Player healed. Current Health: " + CurrentHealth);
-    }
     void Die()
     {
+        if (isDead) return;
         isDead = true;
-        animator.SetTrigger("Die"); // Cần trigger "Die" trong Animator
+        animator.SetTrigger("Die");
         Debug.Log("Player has died.");
         if (playerMovement != null)
             playerMovement.enabled = false;
+        GameUIManager ui = FindObjectOfType<GameUIManager>();
+        if (ui != null) ui.ShowGameOver();
     }
+
     public void SetHealthtoZero()
     {
-        CurrentHealth = 0; // Đặt máu về 0
-      
+        if (!isDead)
+        {
+            CurrentHealth = 0;
+            Die();
+        }
     }
+
     public void ResetHealth()
     {
         CurrentHealth = MaxHealth;
-         isDead = false; // Rất quan trọng: phải reset lại trạng thái chết
-    if (playerMovement != null)
-        playerMovement.enabled = true; 
-      
+        isDead = false;
+        if (playerMovement != null)
+            playerMovement.enabled = true;
     }
-   }
+
+    public void Heal(int amount)
+    {
+        if (isDead) return;
+        CurrentHealth += amount;
+        if (CurrentHealth > MaxHealth)
+            CurrentHealth = MaxHealth;
+        Debug.Log("Player healed. Current Health: " + CurrentHealth);
+    }
+}
