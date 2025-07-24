@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    public bool isGameActive = true;
       public static GameManager Instance { get; private set; }
 
     [Header("Start Point")]

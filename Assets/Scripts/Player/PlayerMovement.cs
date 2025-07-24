@@ -36,8 +36,8 @@ public class PlayerMovement : MonoBehaviour
 
             // Di chuyển lên/xuống
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, verticalInput * moveSpeed);
-             animator.SetBool("isRunning", false);
-             animator.SetBool("isJumping", false);
+            animator.SetBool("isRunning", false);
+            animator.SetBool("isJumping", false);
         }
         else
         {
@@ -48,7 +48,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
-               animator.SetBool("isJumping", true);
+            animator.SetBool("isJumping", true);
         }
 
         // Lật hướng nhân vật

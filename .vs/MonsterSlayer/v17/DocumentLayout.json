@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\thang\\Desktop\\FGU-main\\MonsterSlayer\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2C68C017-70BA-0A5E-9C46-544D77A2853F}|Assembly-CSharp.csproj|C:\\Users\\thang\\Desktop\\FGU-main\\MonsterSlayer\\assets\\scripts\\gamemenu\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C68C017-70BA-0A5E-9C46-544D77A2853F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemenu\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C68C017-70BA-0A5E-9C46-544D77A2853F}|Assembly-CSharp.csproj|C:\\Users\\thang\\Desktop\\FGU-main\\MonsterSlayer\\assets\\scripts\\player\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C68C017-70BA-0A5E-9C46-544D77A2853F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C68C017-70BA-0A5E-9C46-544D77A2853F}|Assembly-CSharp.csproj|c:\\users\\thang\\desktop\\fgu-main\\monsterslayer\\assets\\art\\nhan vat, quai, moi truong\\enemy\\1 centipede\\1 centipede\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C68C017-70BA-0A5E-9C46-544D77A2853F}|Assembly-CSharp.csproj|solutionrelative:assets\\art\\nhan vat, quai, moi truong\\enemy\\1 centipede\\1 centipede\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Enemy.cs",
+              "DocumentMoniker": "C:\\Users\\thang\\Desktop\\FGU-main\\MonsterSlayer\\Assets\\Art\\nhan vat, quai, moi truong\\Enemy\\1 Centipede\\1 Centipede\\Enemy.cs",
+              "RelativeDocumentMoniker": "Assets\\Art\\nhan vat, quai, moi truong\\Enemy\\1 Centipede\\1 Centipede\\Enemy.cs",
+              "ToolTip": "C:\\Users\\thang\\Desktop\\FGU-main\\MonsterSlayer\\Assets\\Art\\nhan vat, quai, moi truong\\Enemy\\1 Centipede\\1 Centipede\\Enemy.cs",
+              "RelativeToolTip": "Assets\\Art\\nhan vat, quai, moi truong\\Enemy\\1 Centipede\\1 Centipede\\Enemy.cs",
+              "ViewState": "AgIAAGsAAAAAAAAAAADwv6MAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T03:18:35.816Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PlayerMovement.cs",
+              "DocumentMoniker": "C:\\Users\\thang\\Desktop\\FGU-main\\MonsterSlayer\\Assets\\Scripts\\Player\\PlayerMovement.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerMovement.cs",
+              "ToolTip": "C:\\Users\\thang\\Desktop\\FGU-main\\MonsterSlayer\\Assets\\Scripts\\Player\\PlayerMovement.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerMovement.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAYwD4AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T02:53:31.71Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "C:\\Users\\thang\\Desktop\\FGU-main\\MonsterSlayer\\Assets\\Scripts\\GameMenu\\GameManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GameMenu\\GameManager.cs",
+              "ToolTip": "C:\\Users\\thang\\Desktop\\FGU-main\\MonsterSlayer\\Assets\\Scripts\\GameMenu\\GameManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GameMenu\\GameManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T15:12:29.345Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
