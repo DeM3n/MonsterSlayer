@@ -1,3 +1,4 @@
+using System.Diagnostics;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -26,13 +27,16 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask groundLayer;
     private bool isGrounded;
 
+    [Header("Attack Detection")]
+    public LayerMask enemyLayer;
+
     private float horizontalInput;
     private float originalGravity;
     public bool canMove = true;
     private bool isAttacking = false;
 
-    [Header("Attack")]
-    public float heavyAttackCooldown = 1f;
+    [Header("Heavy Attack Settings")]
+    public float heavyAttackCooldown = 1.0f;
     private float lastHeavyAttackTime = -99f;
 
     void Start()
@@ -49,15 +53,11 @@ public class PlayerMovement : MonoBehaviour
         horizontalInput = Input.GetAxisRaw("Horizontal");
         verticalInput = Input.GetAxisRaw("Vertical");
 
-        // Climb check
+        // Climb
         if (inLadderZone && !isClimbing && Mathf.Abs(verticalInput) > 0.1f)
-        {
             StartClimbing();
-        }
-        if (isClimbing && !inLadderZone)
-        {
+        if (isClimbing && (!inLadderZone || isGrounded))
             StopClimbing(true);
-        }
 
         HandleAttack();
         HandleJump();
@@ -65,7 +65,7 @@ public class PlayerMovement : MonoBehaviour
         HandleAnimations();
         FlipCharacter();
 
-        // Unset attack state after anim
+        // Reset attack state after animation
         if (isAttacking)
         {
             AnimatorStateInfo animState = animator.GetCurrentAnimatorStateInfo(0);
@@ -82,8 +82,6 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.gravityScale = 0f;
             rb.linearVelocity = new Vector2(0f, verticalInput * climbSpeed);
-
-            // Freeze climb animation when không bấm lên/xuống
             animator.speed = Mathf.Abs(verticalInput) > 0.05f ? 1f : 0f;
             return;
         }
@@ -93,8 +91,7 @@ public class PlayerMovement : MonoBehaviour
             animator.speed = 1f;
         }
 
-        if (isRolling)
-            return;
+        if (isRolling) return;
 
         if (isAttacking)
         {
@@ -113,6 +110,7 @@ public class PlayerMovement : MonoBehaviour
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
             animator.SetTrigger("Jump");
         }
+
         if (isClimbing && Input.GetKeyDown(KeyCode.Space))
         {
             StopClimbing(true);
@@ -135,6 +133,7 @@ public class PlayerMovement : MonoBehaviour
             Invoke(nameof(EndRoll), 0.4f);
         }
     }
+
     void EndRoll()
     {
         isRolling = false;
@@ -145,19 +144,35 @@ public class PlayerMovement : MonoBehaviour
     {
         if (isClimbing || isAttacking || isRolling) return;
 
-        // Attack01 (Normal)
+        // Light attack
         if (Input.GetMouseButtonDown(0))
         {
             animator.SetTrigger("Attack01");
             isAttacking = true;
+            PerformAttack(1.2f, enemyLayer);
         }
-
-        // Attack02 (Heavy/Combo)
-        if (Input.GetMouseButtonDown(1) && Time.time - lastHeavyAttackTime >= heavyAttackCooldown)
+        // Heavy attack
+        else if (Input.GetMouseButtonDown(1) && Time.time - lastHeavyAttackTime >= heavyAttackCooldown)
         {
+            animator.ResetTrigger("Attack01");
             animator.SetTrigger("Attack02");
             isAttacking = true;
             lastHeavyAttackTime = Time.time;
+            PerformAttack(1.8f, enemyLayer);
+        }
+    }
+
+    void PerformAttack(float radius, LayerMask layer)
+    {
+        Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, radius, layer);
+        foreach (var hit in hits)
+        {
+            Enemy enemy = hit.GetComponent<Enemy>();
+            if (enemy != null)
+            {
+                enemy.TakeDamage(1);
+                Debug.Log("🗡️ Gây damage cho enemy: " + hit.name);
+            }
         }
     }
 
@@ -198,7 +213,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("LadderArea"))
+        if (other.CompareTag("Ladder") || other.CompareTag("LadderArea"))
         {
             inLadderZone = true;
         }
@@ -206,10 +221,18 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.CompareTag("LadderArea"))
+        if (other.CompareTag("Ladder") || other.CompareTag("LadderArea"))
         {
             inLadderZone = false;
             StopClimbing(true);
         }
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, 1.2f);
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(transform.position, 1.8f);
     }
 }
