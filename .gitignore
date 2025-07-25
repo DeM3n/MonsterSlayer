@@ -25,3 +25,4 @@ MemoryCaptures/
 sysinfo.txt
 *.apk
 *.aab
+.vs/ 

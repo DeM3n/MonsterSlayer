@@ -26,6 +26,9 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask groundLayer;
     private bool isGrounded;
 
+    [Header("Attack Detection")]
+    public LayerMask enemyLayer;
+
     private float horizontalInput;
     private Rigidbody2D rb;
     private Animator animator;
@@ -35,7 +38,7 @@ public class PlayerMovement : MonoBehaviour
     private bool isAttacking = false;
 
     [Header("Heavy Attack Settings")]
-    public float heavyAttackCooldown = 1.0f;  // Cooldown time in seconds
+    public float heavyAttackCooldown = 1.0f;
     private float lastHeavyAttackTime = -99f;
 
     void Start()
@@ -53,13 +56,9 @@ public class PlayerMovement : MonoBehaviour
         verticalInput = Input.GetAxisRaw("Vertical");
 
         if (inLadderZone && !isClimbing && Mathf.Abs(verticalInput) > 0.1f)
-        {
             StartClimbing();
-        }
         if (isClimbing && (!inLadderZone || isGrounded))
-        {
             StopClimbing(true);
-        }
 
         HandleAttack();
         HandleJump();
@@ -67,7 +66,6 @@ public class PlayerMovement : MonoBehaviour
         HandleAnimations();
         FlipCharacter();
 
-        // Cho phép attack tiếp khi anim kết thúc
         AnimatorStateInfo state = animator.GetCurrentAnimatorStateInfo(0);
         if (isAttacking &&
             !state.IsName("Attack01") && !state.IsName("Attack02") && !state.IsName("JumpAttack"))
@@ -84,16 +82,10 @@ public class PlayerMovement : MonoBehaviour
         if (isClimbing)
         {
             rb.gravityScale = 0f;
-            if (Mathf.Abs(verticalInput) > 0.1f)
-            {
-                rb.linearVelocity = new Vector2(0f, verticalInput * climbSpeed);
-                animator.speed = 1f;
-            }
-            else
-            {
-                rb.linearVelocity = Vector2.zero;
-                animator.speed = 1f;
-            }
+            rb.linearVelocity = Mathf.Abs(verticalInput) > 0.1f
+                ? new Vector2(0f, verticalInput * climbSpeed)
+                : Vector2.zero;
+            animator.speed = 1f;
             return;
         }
         else
@@ -102,10 +94,7 @@ public class PlayerMovement : MonoBehaviour
             animator.speed = 1f;
         }
 
-        if (isRolling)
-        {
-            return;
-        }
+        if (isRolling) return;
 
         if (isAttacking)
         {
@@ -148,6 +137,7 @@ public class PlayerMovement : MonoBehaviour
             Invoke(nameof(EndRoll), 0.4f);
         }
     }
+
     void EndRoll()
     {
         isRolling = false;
@@ -158,14 +148,13 @@ public class PlayerMovement : MonoBehaviour
     {
         if (isClimbing || isAttacking || isRolling) return;
 
-        // Attack01: Chuột trái, không cooldown
         if (Input.GetMouseButtonDown(0))
         {
             animator.ResetTrigger("Attack02");
             animator.SetTrigger("Attack01");
             isAttacking = true;
+            PerformAttack(1.2f, enemyLayer); // phạm vi đòn nhẹ
         }
-        // Attack02: Chuột phải, cooldown
         else if (Input.GetMouseButtonDown(1))
         {
             if (Time.time - lastHeavyAttackTime >= heavyAttackCooldown)
@@ -174,6 +163,21 @@ public class PlayerMovement : MonoBehaviour
                 animator.SetTrigger("Attack02");
                 isAttacking = true;
                 lastHeavyAttackTime = Time.time;
+                PerformAttack(1.8f, enemyLayer); // đòn nặng rộng hơn
+            }
+        }
+    }
+
+    void PerformAttack(float radius, LayerMask layer)
+    {
+        Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, radius, layer);
+        foreach (var hit in hits)
+        {
+            Enemy enemy = hit.GetComponent<Enemy>();
+            if (enemy != null)
+            {
+                enemy.TakeDamage(1);
+                Debug.Log("🗡️ Gây damage cho enemy: " + hit.name);
             }
         }
     }
@@ -216,9 +220,7 @@ public class PlayerMovement : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Ladder"))
-        {
             inLadderZone = true;
-        }
     }
 
     private void OnTriggerExit2D(Collider2D other)
@@ -228,5 +230,13 @@ public class PlayerMovement : MonoBehaviour
             inLadderZone = false;
             StopClimbing(true);
         }
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, 1.2f);
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(transform.position, 1.8f);
     }
 }
