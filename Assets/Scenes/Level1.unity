@@ -129,9 +129,9 @@ GameObject:
   m_Component:
   - component: {fileID: 5307456}
   - component: {fileID: 5307457}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LadderChild1
-  m_TagString: Untagged
+  m_TagString: Ladder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -182,7 +182,7 @@ GameObject:
   m_Component:
   - component: {fileID: 27524994}
   - component: {fileID: 27524995}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: L3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -269,9 +269,9 @@ GameObject:
   m_Component:
   - component: {fileID: 29037279}
   - component: {fileID: 29037280}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LadderArea
-  m_TagString: Ladder
+  m_TagString: LadderArea
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -347,9 +347,9 @@ GameObject:
   m_Component:
   - component: {fileID: 47102811}
   - component: {fileID: 47102812}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LadderArea (1)
-  m_TagString: Ladder
+  m_TagString: LadderArea
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -512,9 +512,9 @@ GameObject:
   m_Component:
   - component: {fileID: 80669788}
   - component: {fileID: 80669789}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LadderArea (1)
-  m_TagString: Ladder
+  m_TagString: LadderArea
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -677,9 +677,9 @@ GameObject:
   m_Component:
   - component: {fileID: 94779521}
   - component: {fileID: 94779522}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LadderChild6
-  m_TagString: Untagged
+  m_TagString: Ladder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1344,7 +1344,7 @@ GameObject:
   m_Component:
   - component: {fileID: 150611010}
   - component: {fileID: 150611011}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: L4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1682,7 +1682,7 @@ GameObject:
   m_Component:
   - component: {fileID: 201818978}
   - component: {fileID: 201818979}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: L2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1769,7 +1769,7 @@ GameObject:
   m_Component:
   - component: {fileID: 221276783}
   - component: {fileID: 221276784}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: L2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2256,7 +2256,7 @@ GameObject:
   m_Component:
   - component: {fileID: 281600942}
   - component: {fileID: 281600943}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: L2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2342,9 +2342,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 312133559}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LadderParent
-  m_TagString: Untagged
+  m_TagString: Ladder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2662,9 +2662,9 @@ GameObject:
   m_Component:
   - component: {fileID: 363568253}
   - component: {fileID: 363568254}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LadderChild2
-  m_TagString: Untagged
+  m_TagString: Ladder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2803,7 +2803,7 @@ GameObject:
   m_Component:
   - component: {fileID: 402865475}
   - component: {fileID: 402865476}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: L3 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3144,9 +3144,9 @@ GameObject:
   m_Component:
   - component: {fileID: 429016130}
   - component: {fileID: 429016131}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 1_0
-  m_TagString: Untagged
+  m_TagString: Ladder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4771,9 +4771,9 @@ GameObject:
   m_Component:
   - component: {fileID: 713265762}
   - component: {fileID: 713265763}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LadderArea (1)
-  m_TagString: Ladder
+  m_TagString: LadderArea
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4882,7 +4882,7 @@ GameObject:
   m_Component:
   - component: {fileID: 768137179}
   - component: {fileID: 768137180}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: L3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5039,7 +5039,7 @@ GameObject:
   m_Component:
   - component: {fileID: 844629267}
   - component: {fileID: 844629268}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: L6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5498,7 +5498,7 @@ GameObject:
   m_Component:
   - component: {fileID: 953274052}
   - component: {fileID: 953274053}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: L3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5839,9 +5839,9 @@ GameObject:
   m_Component:
   - component: {fileID: 991355188}
   - component: {fileID: 991355189}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LadderChild4
-  m_TagString: Untagged
+  m_TagString: Ladder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6303,9 +6303,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1096784963}
   - component: {fileID: 1096784964}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LadderArea (1)
-  m_TagString: Ladder
+  m_TagString: LadderArea
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6412,9 +6412,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1103646085}
   - component: {fileID: 1103646086}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LadderArea (1)
-  m_TagString: Ladder
+  m_TagString: LadderArea
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6759,7 +6759,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1170221049}
   - component: {fileID: 1170221050}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: L4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7750,7 +7750,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1332630549}
   - component: {fileID: 1332630550}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: L4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8097,7 +8097,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1360043586}
   - component: {fileID: 1360043587}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: L1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8415,7 +8415,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1397136021}
   - component: {fileID: 1397136022}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 5_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8555,7 +8555,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1426322357}
   - component: {fileID: 1426322358}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 5_0 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8983,9 +8983,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1479237465}
   - component: {fileID: 1479237466}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 2_0 (1)
-  m_TagString: Untagged
+  m_TagString: Ladder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9245,7 +9245,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1516011276}
   - component: {fileID: 1516011277}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 2_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9419,9 +9419,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1553965727}
   - component: {fileID: 1553965728}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LadderChild3
-  m_TagString: Untagged
+  m_TagString: Ladder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10038,7 +10038,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   jumpForce: 5
-  maxJumps: 2
   rollForce: 10
   rollCooldown: 1
   climbSpeed: 4
@@ -10190,7 +10189,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1642973763}
   - component: {fileID: 1642973764}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: L3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10608,7 +10607,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1709497661}
   - component: {fileID: 1709497662}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 6_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10869,7 +10868,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1742248391}
   - component: {fileID: 1742248392}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: L3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10987,7 +10986,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1768915591}
   - component: {fileID: 1768915592}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: L4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11879,7 +11878,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1876139296}
   - component: {fileID: 1876139297}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: L4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11966,7 +11965,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1889878995}
   - component: {fileID: 1889878996}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: L2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21433,7 +21432,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1939933747}
   - component: {fileID: 1939933748}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: L2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22366,7 +22365,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2111564063}
   - component: {fileID: 2111564064}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: L5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22562,9 +22561,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2144869007}
   - component: {fileID: 2144869008}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LadderChild4 (1)
-  m_TagString: Untagged
+  m_TagString: Ladder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

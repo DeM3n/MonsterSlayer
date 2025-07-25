@@ -5,8 +5,8 @@ public class PlayerMovement : MonoBehaviour
     [Header("Movement")]
     public float moveSpeed = 5f;
     public float jumpForce = 10f;
-    public int maxJumps = 2;
-    private int jumpCount;
+    private Rigidbody2D rb;
+    private Animator animator;
 
     [Header("Rolling (Dash)")]
     public float rollForce = 10f;
@@ -27,15 +27,12 @@ public class PlayerMovement : MonoBehaviour
     private bool isGrounded;
 
     private float horizontalInput;
-    private Rigidbody2D rb;
-    private Animator animator;
     private float originalGravity;
-
     public bool canMove = true;
     private bool isAttacking = false;
 
-    [Header("Heavy Attack Settings")]
-    public float heavyAttackCooldown = 1.0f;  // Cooldown time in seconds
+    [Header("Attack")]
+    public float heavyAttackCooldown = 1f;
     private float lastHeavyAttackTime = -99f;
 
     void Start()
@@ -52,11 +49,12 @@ public class PlayerMovement : MonoBehaviour
         horizontalInput = Input.GetAxisRaw("Horizontal");
         verticalInput = Input.GetAxisRaw("Vertical");
 
+        // Climb check
         if (inLadderZone && !isClimbing && Mathf.Abs(verticalInput) > 0.1f)
         {
             StartClimbing();
         }
-        if (isClimbing && (!inLadderZone || isGrounded))
+        if (isClimbing && !inLadderZone)
         {
             StopClimbing(true);
         }
@@ -67,33 +65,26 @@ public class PlayerMovement : MonoBehaviour
         HandleAnimations();
         FlipCharacter();
 
-        // Cho phép attack tiếp khi anim kết thúc
-        AnimatorStateInfo state = animator.GetCurrentAnimatorStateInfo(0);
-        if (isAttacking &&
-            !state.IsName("Attack01") && !state.IsName("Attack02") && !state.IsName("JumpAttack"))
+        // Unset attack state after anim
+        if (isAttacking)
         {
-            isAttacking = false;
+            AnimatorStateInfo animState = animator.GetCurrentAnimatorStateInfo(0);
+            if (!animState.IsName("Attack01") && !animState.IsName("Attack02") && !animState.IsName("JumpAttack"))
+                isAttacking = false;
         }
     }
 
     void FixedUpdate()
     {
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
-        if (isGrounded) jumpCount = 0;
 
         if (isClimbing)
         {
             rb.gravityScale = 0f;
-            if (Mathf.Abs(verticalInput) > 0.1f)
-            {
-                rb.linearVelocity = new Vector2(0f, verticalInput * climbSpeed);
-                animator.speed = 1f;
-            }
-            else
-            {
-                rb.linearVelocity = Vector2.zero;
-                animator.speed = 1f;
-            }
+            rb.linearVelocity = new Vector2(0f, verticalInput * climbSpeed);
+
+            // Freeze climb animation when không bấm lên/xuống
+            animator.speed = Mathf.Abs(verticalInput) > 0.05f ? 1f : 0f;
             return;
         }
         else
@@ -103,9 +94,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
         if (isRolling)
-        {
             return;
-        }
 
         if (isAttacking)
         {
@@ -119,24 +108,22 @@ public class PlayerMovement : MonoBehaviour
 
     void HandleJump()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && jumpCount < maxJumps)
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded && !isClimbing)
         {
-            jumpCount++;
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
             animator.SetTrigger("Jump");
-
-            if (isClimbing || inLadderZone)
-            {
-                StopClimbing(true);
-                float pushDir = Mathf.Sign(transform.localScale.x);
-                rb.linearVelocity = new Vector2(pushDir * 2f, jumpForce);
-            }
+        }
+        if (isClimbing && Input.GetKeyDown(KeyCode.Space))
+        {
+            StopClimbing(true);
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+            animator.SetTrigger("Jump");
         }
     }
 
     void HandleRoll()
     {
-        if (Input.GetKeyDown(KeyCode.LeftShift) && Time.time - lastRollTime > rollCooldown && isGrounded && !inLadderZone && !isAttacking && !isRolling)
+        if (Input.GetKeyDown(KeyCode.LeftShift) && Time.time - lastRollTime > rollCooldown && isGrounded && !isClimbing && !isAttacking && !isRolling)
         {
             isRolling = true;
             isAttacking = true;
@@ -158,37 +145,33 @@ public class PlayerMovement : MonoBehaviour
     {
         if (isClimbing || isAttacking || isRolling) return;
 
-        // Attack01: Chuột trái, không cooldown
+        // Attack01 (Normal)
         if (Input.GetMouseButtonDown(0))
         {
-            animator.ResetTrigger("Attack02");
             animator.SetTrigger("Attack01");
             isAttacking = true;
         }
-        // Attack02: Chuột phải, cooldown
-        else if (Input.GetMouseButtonDown(1))
+
+        // Attack02 (Heavy/Combo)
+        if (Input.GetMouseButtonDown(1) && Time.time - lastHeavyAttackTime >= heavyAttackCooldown)
         {
-            if (Time.time - lastHeavyAttackTime >= heavyAttackCooldown)
-            {
-                animator.ResetTrigger("Attack01");
-                animator.SetTrigger("Attack02");
-                isAttacking = true;
-                lastHeavyAttackTime = Time.time;
-            }
+            animator.SetTrigger("Attack02");
+            isAttacking = true;
+            lastHeavyAttackTime = Time.time;
         }
     }
 
     void HandleAnimations()
     {
         animator.SetBool("isClimbing", isClimbing);
-        animator.SetBool("isRunning", !isClimbing && horizontalInput != 0 && !isAttacking && !isRolling);
-        animator.SetBool("isJumping", !isGrounded && !isClimbing);
-        animator.SetBool("isFalling", !isGrounded && rb.linearVelocity.y < 0 && !isClimbing);
+        animator.SetBool("isRunning", !isClimbing && Mathf.Abs(horizontalInput) > 0.1f && !isAttacking && !isRolling);
+        animator.SetBool("isJumping", !isGrounded && !isClimbing && rb.linearVelocity.y > 0.01f);
+        animator.SetBool("isFalling", !isGrounded && rb.linearVelocity.y < -0.01f && !isClimbing);
     }
 
     void FlipCharacter()
     {
-        if (!isClimbing && horizontalInput != 0)
+        if (!isClimbing && Mathf.Abs(horizontalInput) > 0.01f)
         {
             Vector3 scale = transform.localScale;
             scale.x = Mathf.Sign(horizontalInput) * Mathf.Abs(scale.x);
@@ -215,7 +198,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Ladder"))
+        if (other.CompareTag("LadderArea"))
         {
             inLadderZone = true;
         }
@@ -223,7 +206,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.CompareTag("Ladder"))
+        if (other.CompareTag("LadderArea"))
         {
             inLadderZone = false;
             StopClimbing(true);

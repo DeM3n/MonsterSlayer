@@ -3,35 +3,51 @@
   "WorkspaceRootPath": "C:\\Users\\admin\\Documents\\GitHub\\MonsterSlayer\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2C68C017-70BA-0A5E-9C46-544D77A2853F}|Assembly-CSharp.csproj|c:\\users\\admin\\documents\\github\\monsterslayer\\assets\\scripts\\player\\playerhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2C68C017-70BA-0A5E-9C46-544D77A2853F}|Assembly-CSharp.csproj|c:\\users\\admin\\documents\\github\\monsterslayer\\assets\\scripts\\player\\die.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C68C017-70BA-0A5E-9C46-544D77A2853F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\die.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C68C017-70BA-0A5E-9C46-544D77A2853F}|Assembly-CSharp.csproj|c:\\users\\admin\\documents\\github\\monsterslayer\\assets\\scripts\\gamemenu\\gameuimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C68C017-70BA-0A5E-9C46-544D77A2853F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemenu\\gameuimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C68C017-70BA-0A5E-9C46-544D77A2853F}|Assembly-CSharp.csproj|c:\\users\\admin\\documents\\github\\monsterslayer\\assets\\scripts\\player\\playerrespawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C68C017-70BA-0A5E-9C46-544D77A2853F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playerrespawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C68C017-70BA-0A5E-9C46-544D77A2853F}|Assembly-CSharp.csproj|C:\\Users\\admin\\Documents\\GitHub\\MonsterSlayer\\assets\\scripts\\player\\playerhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2C68C017-70BA-0A5E-9C46-544D77A2853F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playerhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2C68C017-70BA-0A5E-9C46-544D77A2853F}|Assembly-CSharp.csproj|c:\\users\\admin\\documents\\github\\monsterslayer\\assets\\art\\nhan vat, quai, moi truong\\enemy\\1 centipede\\1 centipede\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C68C017-70BA-0A5E-9C46-544D77A2853F}|Assembly-CSharp.csproj|solutionrelative:assets\\art\\nhan vat, quai, moi truong\\enemy\\1 centipede\\1 centipede\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2C68C017-70BA-0A5E-9C46-544D77A2853F}|Assembly-CSharp.csproj|c:\\users\\admin\\documents\\github\\monsterslayer\\assets\\scripts\\player\\heartdisplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C68C017-70BA-0A5E-9C46-544D77A2853F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\heartdisplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2C68C017-70BA-0A5E-9C46-544D77A2853F}|Assembly-CSharp.csproj|c:\\users\\admin\\documents\\github\\monsterslayer\\assets\\scripts\\gamemenu\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2C68C017-70BA-0A5E-9C46-544D77A2853F}|Assembly-CSharp.csproj|C:\\Users\\admin\\Documents\\GitHub\\MonsterSlayer\\assets\\scripts\\gamemenu\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2C68C017-70BA-0A5E-9C46-544D77A2853F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemenu\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2C68C017-70BA-0A5E-9C46-544D77A2853F}|Assembly-CSharp.csproj|c:\\users\\admin\\documents\\github\\monsterslayer\\assets\\scripts\\player\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2C68C017-70BA-0A5E-9C46-544D77A2853F}|Assembly-CSharp.csproj|C:\\Users\\admin\\Documents\\GitHub\\MonsterSlayer\\assets\\scripts\\player\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2C68C017-70BA-0A5E-9C46-544D77A2853F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2C68C017-70BA-0A5E-9C46-544D77A2853F}|Assembly-CSharp.csproj|c:\\users\\admin\\documents\\github\\monsterslayer\\assets\\animationingame\\enemy\\battle turtle\\battleturtle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2C68C017-70BA-0A5E-9C46-544D77A2853F}|Assembly-CSharp.csproj|c:\\users\\admin\\documents\\github\\monsterslayer\\assets\\scripts\\sortingplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C68C017-70BA-0A5E-9C46-544D77A2853F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\sortingplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C68C017-70BA-0A5E-9C46-544D77A2853F}|Assembly-CSharp.csproj|C:\\Users\\admin\\Documents\\GitHub\\MonsterSlayer\\assets\\art\\nhan vat, quai, moi truong\\enemy\\1 centipede\\1 centipede\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C68C017-70BA-0A5E-9C46-544D77A2853F}|Assembly-CSharp.csproj|solutionrelative:assets\\art\\nhan vat, quai, moi truong\\enemy\\1 centipede\\1 centipede\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C68C017-70BA-0A5E-9C46-544D77A2853F}|Assembly-CSharp.csproj|C:\\Users\\admin\\Documents\\GitHub\\MonsterSlayer\\assets\\scripts\\player\\heartdisplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C68C017-70BA-0A5E-9C46-544D77A2853F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\heartdisplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C68C017-70BA-0A5E-9C46-544D77A2853F}|Assembly-CSharp.csproj|C:\\Users\\admin\\Documents\\GitHub\\MonsterSlayer\\assets\\animationingame\\enemy\\battle turtle\\battleturtle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2C68C017-70BA-0A5E-9C46-544D77A2853F}|Assembly-CSharp.csproj|solutionrelative:assets\\animationingame\\enemy\\battle turtle\\battleturtle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2C68C017-70BA-0A5E-9C46-544D77A2853F}|Assembly-CSharp.csproj|c:\\users\\admin\\documents\\github\\monsterslayer\\assets\\animationingame\\enemy\\battle turtle\\enemybullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2C68C017-70BA-0A5E-9C46-544D77A2853F}|Assembly-CSharp.csproj|C:\\Users\\admin\\Documents\\GitHub\\MonsterSlayer\\assets\\animationingame\\enemy\\battle turtle\\enemybullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2C68C017-70BA-0A5E-9C46-544D77A2853F}|Assembly-CSharp.csproj|solutionrelative:assets\\animationingame\\enemy\\battle turtle\\enemybullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2C68C017-70BA-0A5E-9C46-544D77A2853F}|Assembly-CSharp.csproj|c:\\users\\admin\\documents\\github\\monsterslayer\\assets\\animationingame\\enemy\\battle turtle\\enemyshooting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2C68C017-70BA-0A5E-9C46-544D77A2853F}|Assembly-CSharp.csproj|C:\\Users\\admin\\Documents\\GitHub\\MonsterSlayer\\assets\\animationingame\\enemy\\battle turtle\\enemyshooting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2C68C017-70BA-0A5E-9C46-544D77A2853F}|Assembly-CSharp.csproj|solutionrelative:assets\\animationingame\\enemy\\battle turtle\\enemyshooting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -42,37 +58,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "GameManager.cs",
-              "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\MonsterSlayer\\Assets\\Scripts\\GameMenu\\GameManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\GameMenu\\GameManager.cs",
-              "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\MonsterSlayer\\Assets\\Scripts\\GameMenu\\GameManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\GameMenu\\GameManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "PlayerRespawn.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\MonsterSlayer\\Assets\\Scripts\\Player\\PlayerRespawn.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerRespawn.cs",
+              "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\MonsterSlayer\\Assets\\Scripts\\Player\\PlayerRespawn.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerRespawn.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAIwDUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-24T21:32:15.31Z",
+              "WhenOpened": "2025-07-25T00:50:28.104Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "HeartDisplay.cs",
-              "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\MonsterSlayer\\Assets\\Scripts\\Player\\HeartDisplay.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\HeartDisplay.cs",
-              "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\MonsterSlayer\\Assets\\Scripts\\Player\\HeartDisplay.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Player\\HeartDisplay.cs",
+              "DocumentIndex": 0,
+              "Title": "Die.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\MonsterSlayer\\Assets\\Scripts\\Player\\Die.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\Die.cs",
+              "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\MonsterSlayer\\Assets\\Scripts\\Player\\Die.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\Die.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-24T21:32:02.613Z",
+              "WhenOpened": "2025-07-25T00:50:19.61Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "GameUIManager.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\MonsterSlayer\\Assets\\Scripts\\GameMenu\\GameUIManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GameMenu\\GameUIManager.cs",
+              "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\MonsterSlayer\\Assets\\Scripts\\GameMenu\\GameUIManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GameMenu\\GameUIManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T00:48:44.262Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "Enemy.cs",
               "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\MonsterSlayer\\Assets\\Art\\nhan vat, quai, moi truong\\Enemy\\1 Centipede\\1 Centipede\\Enemy.cs",
               "RelativeDocumentMoniker": "Assets\\Art\\nhan vat, quai, moi truong\\Enemy\\1 Centipede\\1 Centipede\\Enemy.cs",
@@ -80,12 +109,11 @@
               "RelativeToolTip": "Assets\\Art\\nhan vat, quai, moi truong\\Enemy\\1 Centipede\\1 Centipede\\Enemy.cs",
               "ViewState": "AgIAAE0AAAAAAAAAAAAIwH0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-24T19:31:33.076Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-24T19:31:33.076Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "BattleTurtle.cs",
               "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\MonsterSlayer\\Assets\\AnimationInGame\\Enemy\\Battle turtle\\BattleTurtle.cs",
               "RelativeDocumentMoniker": "Assets\\AnimationInGame\\Enemy\\Battle turtle\\BattleTurtle.cs",
@@ -93,12 +121,11 @@
               "RelativeToolTip": "Assets\\AnimationInGame\\Enemy\\Battle turtle\\BattleTurtle.cs",
               "ViewState": "AgIAAG0AAAAAAAAAAAAwwJ0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-24T19:31:08.488Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-24T19:31:08.488Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "EnemyBullet.cs",
               "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\MonsterSlayer\\Assets\\AnimationInGame\\Enemy\\Battle turtle\\EnemyBullet.cs",
               "RelativeDocumentMoniker": "Assets\\AnimationInGame\\Enemy\\Battle turtle\\EnemyBullet.cs",
@@ -106,12 +133,11 @@
               "RelativeToolTip": "Assets\\AnimationInGame\\Enemy\\Battle turtle\\EnemyBullet.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAgwDAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-24T19:30:46.088Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-24T19:30:46.088Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "EnemyShooting.cs",
               "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\MonsterSlayer\\Assets\\AnimationInGame\\Enemy\\Battle turtle\\EnemyShooting.cs",
               "RelativeDocumentMoniker": "Assets\\AnimationInGame\\Enemy\\Battle turtle\\EnemyShooting.cs",
@@ -119,12 +145,11 @@
               "RelativeToolTip": "Assets\\AnimationInGame\\Enemy\\Battle turtle\\EnemyShooting.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-24T19:30:25.861Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-24T19:30:25.861Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "PlayerHealth.cs",
               "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\MonsterSlayer\\Assets\\Scripts\\Player\\PlayerHealth.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerHealth.cs",
@@ -137,15 +162,53 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "PlayerMovement.cs",
               "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\MonsterSlayer\\Assets\\Scripts\\Player\\PlayerMovement.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerMovement.cs",
               "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\MonsterSlayer\\Assets\\Scripts\\Player\\PlayerMovement.cs",
               "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerMovement.cs",
-              "ViewState": "AgIAALgAAAAAAAAAAAAIwOgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAKcAAAAAAAAAAAAIwNcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-24T18:36:48.756Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\MonsterSlayer\\Assets\\Scripts\\GameMenu\\GameManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GameMenu\\GameManager.cs",
+              "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\MonsterSlayer\\Assets\\Scripts\\GameMenu\\GameManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GameMenu\\GameManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T21:32:15.31Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "HeartDisplay.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\MonsterSlayer\\Assets\\Scripts\\Player\\HeartDisplay.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\HeartDisplay.cs",
+              "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\MonsterSlayer\\Assets\\Scripts\\Player\\HeartDisplay.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\HeartDisplay.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T21:32:02.613Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SortingPlayer.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\MonsterSlayer\\Assets\\Scripts\\SortingPlayer.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\SortingPlayer.cs",
+              "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\MonsterSlayer\\Assets\\Scripts\\SortingPlayer.cs",
+              "RelativeToolTip": "Assets\\Scripts\\SortingPlayer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T00:39:29.978Z",
               "EditorCaption": ""
             },
             {
